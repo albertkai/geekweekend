@@ -1,0 +1,254 @@
+<template name="course">
+
+    <div id="get-course-modal" class="r-modal">
+        <div class="close"><span class="glyphicon glyphicon-remove-sign"></span></div>
+        <div class="header">
+            ЗАПИСЬ НА КУРС <br>
+            <span>HTML5 + CSS3</span>
+        </div>
+        <div class="body">
+            <form id="first-form" action="">
+                <div class="checkout-slide" style="width: 556px;">
+                    <div>
+                        <input type="text" class="required" data-rule-minlength="2" name="firstName" id="first-name" placeholder="ИМЯ*">
+                        <input type="text" class="required" data-rule-minlength="2" name="secondName" id="second-name" placeholder="ФАМИЛИЯ*">
+                    </div>
+                    <div>
+                        <input type="tel" class="required phone" data-rule-minlength="2" name="tel" id="tel" placeholder="ТЕЛЕФОН*">
+                        <input type="email" class="required email" data-rule-minlength="2" name="email" id="email" placeholder="E-MAIL*">
+                    </div>
+                    <textarea name="" id="" cols="30" rows="3" placeholder="ЕСТЬ ЧТО ДОБАВИТЬ?"></textarea>
+                    <button class="further">ДАЛЕЕ <span class="glyphicon glyphicon-arrow-right icon-white"></span>
+                    </button>
+                </div>
+            </form>
+            <form id="second-form">
+                <div class="checkout-slide" style="width: 556px;">
+                    <div>
+
+                        <div>
+                            <div id="got-notebook" class="custom-select" data-value="0">
+                                <p>Есть свой ноутбук</p>
+                                <i></i>
+                                <ul>
+                                    <li data-value="0">Есть свой ноутбук</li>
+                                    <li data-value="1000">Нужно предоставить</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div id="system" class="custom-select" data-value="windows">
+                                <p>Windows</p>
+                                <i></i>
+                                <ul>
+                                    <li data-value="windows">Windows</li>
+                                    <li data-value="mac">Mac OSX</li>
+                                    <li data-value="linux">Linux</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="radio-cont">
+                            <div class="radio">
+                                <input type="radio" name="payment" checked="checked" value="cash">ОПЛАТА НАЛИЧНЫМИ
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="payment" value="card">ОПЛАТА КАРТОЙ
+                            </div>
+                        </div>
+                        <div>
+                            <div class="radio">
+                                <input type="radio" name="payment" value="cash">ОПЛАТА НАЛИЧНЫМИ
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="payment" value="cash">ОПЛАТА КАРТОЙ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total">
+                        СУММА: <br>
+                        <span>5000р</span>
+                    </div>
+                    <button class="get-back"><span class="glyphicon glyphicon-arrow-left icon-white"></span> НАЗАД
+                    </button>
+                    <button class="go">ПОЕХАЛИ!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section id="course-pic" data-stellar-background-ratio=".7" style="background-image: url(/img/course_pic.jpg);">
+        <div class="container">
+            <h1 data-stellar-ratio=".8">HTML5 + CSS3</h1>
+            <h2 data-stellar-ratio=".9">Основы веб-разработки</h2>
+            <h3 data-stellar-ratio="1.4">5000р</h3>
+        </div>
+    </section>
+
+    <section id="course-content" data-price="5000">
+
+        <div class="rotated"></div>
+
+
+        <div class="container">
+            <div class="row">
+                <article>
+
+                    <h2>О КУРСЕ</h2>
+
+                    <p class="desc">
+                        Данный курс - лучшее, что может предложить индустрия на данный момент! Вы узнаете что же такое HTML и CSS, как строится веб страница и что это вообще такое? Опытный тренер расскажет вам о том, как здорово ему живется!
+                    </p>
+
+                    <h2>ПРОГРАММА</h2>
+
+                    <div id="schedule">
+
+                        <div>
+                            <h4>Суббота</h4>
+
+
+                            <div>
+                                <p>12:00</p>
+                                <p>Знакомимся</p>
+                            </div>
+
+                            <div>
+                                <p>13:00</p>
+                                <p>Учимся ходить, проходим основы</p>
+                            </div>
+
+                            <div>
+                                <p>15:00</p>
+                                <p>Начинаем активно обдумывать происходящее</p>
+                            </div>
+
+                            <div>
+                                <p>17:00</p>
+                                <p>Красиво уходим на закат</p>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <h4>Воскресенье</h4>
+
+
+                            <div>
+                                <p>12:00</p>
+                                <p>Проверяем домашнее задание, разьираем ошибки</p>
+                            </div>
+
+                            <div>
+                                <p>13:00</p>
+                                <p>Начинаем делать новый интересный сайт, учимся изобретать</p>
+                            </div>
+
+                            <div>
+                                <p>15:00</p>
+                                <p>Проходим Twitter Bootstrap</p>
+                            </div>
+
+                            <div>
+                                <p>17:00</p>
+                                <p>Начинаем активно ихучать новое</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <h2>О ТРЕНЕРЕ</h2>
+
+                    <div id="coach">
+
+
+                        <div>
+                            <img src="/img/trainer_pic.jpg" alt="">
+
+                            <p>HTML5 CSS3 JS/Jquery UI/UX Node.js Backbone.js Meteor.js </p>
+                        </div>
+                        <div>
+                            <p>
+                                <span>Альберт</span>
+                                <span>Кайгородов</span>
+                                Занимется веб-разработкой с 2007 года, является frontend-разработчиком высшего класса.                                      Сотрудничал с такими компаниями как Газпром, Сибур, ЛенСтройТрест, Альфа Капитал и т.д.                                      P.S. Этот сайт - его работа от дизайна                                      до деплоя.
+                            </p>
+                            <i></i>
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+                <aside>
+
+                    <h3>Ближайшие даты:</h3>
+
+                    <p class="dates">
+                        <span>24-25</span><br>
+                        мая
+                    </p>
+
+                    <h3>Вы изучите:</h3>
+
+                    <ul>
+
+                        <li>Узнаете о разработке</li>
+
+                        <li> Научитесть писать сайты</li>
+
+                        <li>Изучите современный инструментарий</li>
+
+                    </ul>
+
+                    <h3>Пройденные темы:</h3>
+
+                    <ul>
+
+                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
+
+                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
+
+                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
+
+                        <li>ZenCoding</li>
+
+                        <li>Chrome Devtools</li>
+
+                        <li>Webstorm IDE</li>
+
+                    </ul>
+
+                    <h3>Требования</h3>
+
+                    <ul>
+
+                        <li>Знание компьютера</li>
+
+                        <li>Желание</li>
+
+                    </ul>
+
+                    <button id="get-course" data-course="html5" class="animated tada">ЗАПИСАТЬСЯ</button>
+
+                    <h3>Либо по телефону:</h3>
+
+                    <p class="dates">
+                        (812)320-08-08
+                    </p>
+
+                </aside>
+            </div>
+        </div>
+
+    </section>
+
+
+
+</template>

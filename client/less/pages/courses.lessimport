@@ -1,0 +1,476 @@
+#courses-heading {
+  width: 100%;
+  height: 200px;
+  margin-top: -140px;
+  background: url(/img/rockywall.png)
+}
+
+#courses-heading h2 {
+  position: relative;
+  bottom: 0;
+  top: 165px;
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-shadow: 0 0 3px #aaa
+}
+
+@media (max-width: 768px) {
+  #courses-heading h2 {
+    font-size: 25px;
+    line-height: 25px
+  }
+}
+
+#courses-main {
+  background: url(/img/rockywall.png);
+  min-height: 700px
+}
+
+#courses-main > .container {
+  padding-top: 24px
+}
+
+#courses-main > .container > .row > div > div {
+  overflow: visible !important
+}
+
+#courses-main > .container > .row > div > div .item {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  padding-right: 0;
+  margin-bottom: 15px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  -webkit-transition: all all .4s ease ease-out;
+  -moz-transition: all all .4s ease ease-out;
+  -o-transition: all all .4s ease ease-out;
+  transition: all all .4s ease ease-out
+}
+
+@media (min-width: 768px) {
+  #courses-main > .container > .row > div > div .item {
+    float: left;
+    width: 50%
+  }
+}
+
+@media (min-width: 992px) {
+  #courses-main > .container > .row > div > div .item {
+    float: left;
+    width: 33.33333333333333%
+  }
+}
+
+@media (min-width: 1200px) {
+  #courses-main > .container > .row > div > div .item {
+    float: left;
+    width: 33.33333333333333%
+  }
+}
+
+@media (max-width: 768px) {
+  #courses-main > .container > .row > div > div .item {
+    padding-right: 15px
+  }
+}
+
+#courses-main > .container > .row > div > div .item > div {
+  position: relative;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px
+}
+
+#courses-main > .container > .row > div > div .item > div .wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 5px #ddd;
+  -moz-box-shadow: 0 0 5px #ddd;
+  box-shadow: 0 0 5px #ddd
+}
+
+#courses-main > .container > .row > div > div .item > div .recto {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+  top: 0;
+  background: #fff;
+  -webkit-transform: rotate3d(0, 1, 0, 0deg);
+  -moz-transform: rotate3d(0, 1, 0, 0deg);
+  -o-transform: rotate3d(0, 1, 0, 0deg);
+  transform: rotate3d(0, 1, 0, 0deg);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px
+}
+
+#courses-main > .container > .row > div > div .item > div .recto > div .img {
+  position: relative;
+  width: 100%;
+  height: 220px
+}
+
+#courses-main > .container > .row > div > div .item > div .recto > div .img .course-pic {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #a38dff;
+  background-position: center center
+}
+
+#courses-main > .container > .row > div > div .item > div .recto > div .img .price {
+  position: absolute;
+  display: inline-block;
+  padding: 0 15px;
+  color: #fff;
+  background: rgba(0, 0, 0, .8);
+  bottom: 0;
+  right: 0;
+  font-size: 33px;
+  font-weight: 500;
+  opacity: .2
+}
+
+#courses-main > .container > .row > div > div .item > div .recto > div .img .date {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0, 0, 0, .3);
+  color: #fff;
+  font-size: 26px;
+  font-weight: 100;
+  margin: 0
+}
+
+#courses-main > .container > .row > div > div .item > div .recto > div .info {
+  color: #555;
+  padding: 20px 10px;
+  bottom: 0
+}
+
+#courses-main > .container > .row > div > div .item > div .recto > div .info h3, #courses-main > .container > .row > div > div .item > div .recto > div .info h4 {
+  margin: 0
+}
+
+#courses-main > .container > .row > div > div .item > div .recto > div .info h3 {
+  font-weight: 200
+}
+
+#courses-main > .container > .row > div > div .item > div .recto > div .info h4 {
+  font-size: 16px;
+  color: #555;
+  font-weight: 100
+}
+
+#courses-main > .container > .row > div > div .item > div .recto > div .type {
+  width: 100%;
+  height: 12px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  background: #2dffb0;
+  bottom: 0;
+  line-height: 12px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 3px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box
+}
+
+#courses-main > .container > .row > div > div .item > div .recto > div .type.level-up {
+  background: #63f5fc
+}
+
+#courses-main > .container > .row > div > div .item > div .recto > div .type.pro {
+  background: #a38dff
+}
+
+#courses-main > .container > .row > div > div .item > div .verso {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px
+}
+
+#courses-main > .container > .row > div > div .item > div.scroll {
+  overflow: hidden
+}
+
+#courses-main > .container > .row > div > div .item > div.scroll .verso {
+  bottom: -300px
+}
+
+#courses-main > .container > .row > div > div .item > div.flip {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px
+}
+
+#courses-main > .container > .row > div > div .item > div.flip .wrapper {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transition: all all 1s ease ease-out;
+  -moz-transition: all all 1s ease ease-out;
+  -o-transition: all all 1s ease ease-out;
+  transition: all all 1s ease ease-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d
+}
+
+#courses-main > .container > .row > div > div .item > div.flip .verso {
+  -webkit-transform: rotate3d(0, 1, 0, -180deg);
+  -moz-transform: rotate3d(0, 1, 0, -180deg);
+  -o-transform: rotate3d(0, 1, 0, -180deg);
+  transform: rotate3d(0, 1, 0, -180deg);
+  background: #fff;
+  padding: 10px
+}
+
+#courses-main > .container > .row > div > div .item > div.flip .verso > div {
+  overflow: scroll;
+  height: 100%
+}
+
+#courses-main > .container > .row > div > div .item > div.flip .verso > div h3 {
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+  font-style: italic;
+  margin-bottom: 20px
+}
+
+#courses-main > .container > .row > div > div .item > div.flip .verso > div ul {
+  margin-left: 0;
+  padding-left: 20px;
+  list-style-image: url(/img/list_marker_2.png)
+}
+
+#courses-main > .container > .row > div > div .item > div.flip .verso > div ul li {
+  margin-bottom: .5em;
+  font-weight: 200;
+  color: #555
+}
+
+#courses-main > .container > .row > div > div .item > div.flip .recto, #courses-main > .container > .row > div > div .item > div.flip .verso {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden
+}
+
+#courses-main > .container > .row > div > div .item > div.flip .flipIt {
+  -webkit-transform: rotate3d(0, 1, 0, -180deg);
+  -moz-transform: rotate3d(0, 1, 0, -180deg);
+  -o-transform: rotate3d(0, 1, 0, -180deg);
+  transform: rotate3d(0, 1, 0, -180deg)
+}
+
+#courses-main > .container > .row > aside {
+  background: #fff;
+  padding-bottom: 30px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 5px #ddd;
+  -moz-box-shadow: 0 0 5px #ddd;
+  box-shadow: 0 0 5px #ddd
+}
+
+#courses-main > .container > .row > aside h3 {
+  text-align: center;
+  font-style: italic;
+  color: #bbb;
+  font-size: 16px;
+  font-weight: 200;
+  margin: 10px 0 20px
+}
+
+#courses-main > .container > .row > aside #chooseType {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px
+}
+
+#courses-main > .container > .row > aside #chooseType li {
+  position: relative;
+  font-weight: 200
+}
+
+#courses-main > .container > .row > aside #chooseType li .custom-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  top: 7px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8)
+}
+
+#courses-main > .container > .row > aside #chooseType li .custom-checkbox > div {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transition: all all .2s ease ease-out;
+  -moz-transition: all all .2s ease ease-out;
+  -o-transition: all all .2s ease ease-out;
+  transition: all all .2s ease ease-out
+}
+
+#courses-main > .container > .row > aside #chooseType li .custom-checkbox.kick-start {
+  border: 2px solid #2dffb0
+}
+
+#courses-main > .container > .row > aside #chooseType li .custom-checkbox.kick-start > div {
+  background: #2dffb0
+}
+
+#courses-main > .container > .row > aside #chooseType li .custom-checkbox.level-up {
+  border: 2px solid #63f5fc
+}
+
+#courses-main > .container > .row > aside #chooseType li .custom-checkbox.level-up > div {
+  background: #63f5fc
+}
+
+#courses-main > .container > .row > aside #chooseType li .custom-checkbox.pro {
+  border: 2px solid #a38dff
+}
+
+#courses-main > .container > .row > aside #chooseType li .custom-checkbox.pro > div {
+  background: #a38dff
+}
+
+#courses-main > .container > .row > aside #chooseType li .custom-checkbox._active > div {
+  visibility: visible;
+  opacity: 1
+}
+
+#courses-main .custom-select {
+  position: relative;
+  border: 2px solid #63f5fc;
+  z-index: 11;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0 30px;
+  cursor: pointer;
+  font-weight: 200
+}
+
+#courses-main .custom-select > i {
+  position: absolute;
+  display: block;
+  border-top: 9px solid #63f5fc;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  right: 11px;
+  top: 11px
+}
+
+#courses-main .custom-select > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #63f5fc;
+  position: absolute;
+  top: 10px;
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 0;
+  width: 100%;
+  left: 0;
+  padding: 12px 0;
+  visibility: hidden;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  -webkit-transition: all all .4s ease ease-out;
+  -moz-transition: all all .4s ease ease-out;
+  -o-transition: all all .4s ease ease-out;
+  transition: all all .4s ease ease-out
+}
+
+#courses-main .custom-select > ul > li {
+  color: #fff;
+  padding: 0 10px
+}
+
+#courses-main .custom-select > ul > li:hover, #courses-main .custom-select > ul > li._active {
+  background: rgba(0, 0, 0, .1)
+}
+
+#courses-main .custom-select > ul._visible {
+  visibility: visible;
+  top: 40px;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: .9
+}

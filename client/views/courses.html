@@ -1,0 +1,1267 @@
+<template name="courses">
+<section id="main" class="loaded">
+
+<div id="courses-heading">
+    <h2>Выберите курс:</h2>
+</div>
+
+
+<div id="courses-main">
+
+<div class="container">
+
+<div class="row row-offcanvas row-offcanvas-left">
+
+<aside class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+
+    <h3>Город:</h3>
+
+
+    <div class="multi-select">
+        <ul>
+            <li class="_active">Москва</li>
+            <li>Санкт-Петербург</li>
+            <li>Киев</li>
+        </ul>
+    </div>
+
+
+    <h3>Сфера:</h3>
+
+
+    <div id="type-choose" class="custom-select">
+        <p>Все сферы</p>
+        <i></i>
+        <ul>
+            <li data-value="*">Все сферы</li>
+            <li data-value="webdev">Веб-разработка</li>
+            <li data-value="design">Дизайн</li>
+        </ul>
+    </div>
+
+
+    <h3>Выберите тип:</h3>
+
+
+    <ul id="chooseType">
+        <li>
+            <div class="custom-checkbox kick-start _active" data-value="kick-start">
+                <div></div>
+            </div>
+            Kick-start
+        </li>
+        <li>
+            <div class="custom-checkbox level-up _active" data-value="level-up">
+                <div></div>
+            </div>
+            Level-up
+        </li>
+        <li>
+            <div class="custom-checkbox pro _active" data-value="pro">
+                <div></div>
+            </div>
+            Pro
+        </li>
+    </ul>
+
+    <h3>Сортировать по:</h3>
+
+    <div id="sort-choose" class="custom-select">
+        <p>По дате</p>
+        <i></i>
+        <ul>
+            <li data-value="date">По дате</li>
+            <li data-value="price">По цене</li>
+            <li data-value="type">По типу</li>
+        </ul>
+    </div>
+
+</aside><!--/span-->
+
+<div class="courses-cont col-xs-12 col-sm-9">
+<button id="sidenav-toggle" class="visible-xs">Toggle</button>
+<div class="row isotope" style="position: relative; overflow: hidden; height: 1800px;">
+
+
+<div class="item kick-start Веб-разработка isotope-item" data-alias="html5" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
+    <div class="thumb flip">
+
+        <!--</div>-->
+
+        <div class="wrapper">
+            <div class="recto">
+
+                <div>
+
+                    <div class="type kick-start" data-type="1">
+                        <p>kick-start</p>
+                    </div>
+
+                    <div class="img">
+                        <div class="course-pic" style="background-image: url(/img/htmll.png)">
+                        </div>
+
+                        <p class="date"><span>23-24</span> мая</p>
+                    </div>
+                    <div class="info" data-price="4000">
+                        <h3>HTML5 + CSS3</h3>
+                        <h4>Основы веб-разработки</h4>
+                    </div>
+
+                    <p class="price">4000p</p>
+
+                </div>
+
+            </div>
+            <div class="verso">
+                <div>
+                    <h3>Вы изучите:</h3>
+
+                    <ul>
+
+                        <li>Узнаете о разработке</li>
+
+                        <li> Научитесть писать сайты</li>
+
+                        <li>Изучите современный инструментарий</li>
+
+                    </ul>
+
+                    <h3>Пройденные темы:</h3>
+
+                    <ul>
+
+                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
+
+                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
+
+                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
+
+                        <li>ZenCoding</li>
+
+                        <li>Chrome Devtools</li>
+
+                        <li>Webstorm IDE</li>
+
+                    </ul>
+
+                    <h3>Требования</h3>
+
+                    <ul>
+
+                        <li>Знание компьютера</li>
+
+                        <li>Желание</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="item kick-start Веб-разработка isotope-item" data-alias="html5" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(292px, 0px, 0px);">
+    <div class="thumb flip">
+
+        <!--</div>-->
+
+        <div class="wrapper">
+            <div class="recto">
+
+                <div>
+
+                    <div class="type kick-start" data-type="1">
+                        <p>kick-start</p>
+                    </div>
+
+                    <div class="img">
+                        <div class="course-pic" style="background-image: url(/img/htmll.png)">
+                        </div>
+
+                        <p class="date"><span>23-24</span> мая</p>
+                    </div>
+                    <div class="info" data-price="6000">
+                        <h3>HTML5 + CSS3</h3>
+                        <h4>Основы веб-разработки</h4>
+                    </div>
+
+                    <p class="price">6000p</p>
+
+                </div>
+
+            </div>
+            <div class="verso">
+                <div>
+                    <h3>Вы изучите:</h3>
+
+                    <ul>
+
+                        <li>Узнаете о разработке</li>
+
+                        <li> Научитесть писать сайты</li>
+
+                        <li>Изучите современный инструментарий</li>
+
+                    </ul>
+
+                    <h3>Пройденные темы:</h3>
+
+                    <ul>
+
+                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
+
+                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
+
+                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
+
+                        <li>ZenCoding</li>
+
+                        <li>Chrome Devtools</li>
+
+                        <li>Webstorm IDE</li>
+
+                    </ul>
+
+                    <h3>Требования</h3>
+
+                    <ul>
+
+                        <li>Знание компьютера</li>
+
+                        <li>Желание</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="item kick-start Веб-разработка isotope-item" data-alias="html5" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(584px, 0px, 0px);">
+    <div class="thumb flip">
+
+        <!--</div>-->
+
+        <div class="wrapper">
+            <div class="recto">
+
+                <div>
+
+                    <div class="type kick-start" data-type="1">
+                        <p>kick-start</p>
+                    </div>
+
+                    <div class="img">
+                        <div class="course-pic" style="background-image: url(/img/htmll.png)">
+                        </div>
+
+                        <p class="date"><span>23-24</span> мая</p>
+                    </div>
+                    <div class="info" data-price="4000">
+                        <h3>HTML5 + CSS3</h3>
+                        <h4>Основы веб-разработки</h4>
+                    </div>
+
+                    <p class="price">4000p</p>
+
+                </div>
+
+            </div>
+            <div class="verso">
+                <div>
+                    <h3>Вы изучите:</h3>
+
+                    <ul>
+
+                        <li>Узнаете о разработке</li>
+
+                        <li> Научитесть писать сайты</li>
+
+                        <li>Изучите современный инструментарий</li>
+
+                    </ul>
+
+                    <h3>Пройденные темы:</h3>
+
+                    <ul>
+
+                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
+
+                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
+
+                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
+
+                        <li>ZenCoding</li>
+
+                        <li>Chrome Devtools</li>
+
+                        <li>Webstorm IDE</li>
+
+                    </ul>
+
+                    <h3>Требования</h3>
+
+                    <ul>
+
+                        <li>Знание компьютера</li>
+
+                        <li>Желание</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="item level-up Веб-разработка isotope-item" data-alias="html5" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 360px, 0px);">
+    <div class="thumb flip">
+
+        <!--</div>-->
+
+        <div class="wrapper">
+            <div class="recto">
+
+                <div>
+
+                    <div class="type level-up" data-type="2">
+                        <p>level-up</p>
+                    </div>
+
+                    <div class="img">
+                        <div class="course-pic" style="background-image: url(/img/htmll.png)">
+                        </div>
+
+                        <p class="date"><span>23-24</span> мая</p>
+                    </div>
+                    <div class="info" data-price="7000">
+                        <h3>HTML5 + CSS3</h3>
+                        <h4>Основы веб-разработки</h4>
+                    </div>
+
+                    <p class="price">7000p</p>
+
+                </div>
+
+            </div>
+            <div class="verso">
+                <div>
+                    <h3>Вы изучите:</h3>
+
+                    <ul>
+
+                        <li>Узнаете о разработке</li>
+
+                        <li> Научитесть писать сайты</li>
+
+                        <li>Изучите современный инструментарий</li>
+
+                    </ul>
+
+                    <h3>Пройденные темы:</h3>
+
+                    <ul>
+
+                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
+
+                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
+
+                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
+
+                        <li>ZenCoding</li>
+
+                        <li>Chrome Devtools</li>
+
+                        <li>Webstorm IDE</li>
+
+                    </ul>
+
+                    <h3>Требования</h3>
+
+                    <ul>
+
+                        <li>Знание компьютера</li>
+
+                        <li>Желание</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="item level-up Веб-разработка isotope-item" data-alias="html5" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(292px, 360px, 0px);">
+    <div class="thumb flip">
+
+        <!--</div>-->
+
+        <div class="wrapper">
+            <div class="recto">
+
+                <div>
+
+                    <div class="type level-up" data-type="2">
+                        <p>level-up</p>
+                    </div>
+
+                    <div class="img">
+                        <div class="course-pic" style="background-image: url(/img/htmll.png)">
+                        </div>
+
+                        <p class="date"><span>23-24</span> мая</p>
+                    </div>
+                    <div class="info" data-price="5000">
+                        <h3>HTML5 + CSS3</h3>
+                        <h4>Основы веб-разработки</h4>
+                    </div>
+
+                    <p class="price">5000p</p>
+
+                </div>
+
+            </div>
+            <div class="verso">
+                <div>
+                    <h3>Вы изучите:</h3>
+
+                    <ul>
+
+                        <li>Узнаете о разработке</li>
+
+                        <li> Научитесть писать сайты</li>
+
+                        <li>Изучите современный инструментарий</li>
+
+                    </ul>
+
+                    <h3>Пройденные темы:</h3>
+
+                    <ul>
+
+                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
+
+                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
+
+                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
+
+                        <li>ZenCoding</li>
+
+                        <li>Chrome Devtools</li>
+
+                        <li>Webstorm IDE</li>
+
+                    </ul>
+
+                    <h3>Требования</h3>
+
+                    <ul>
+
+                        <li>Знание компьютера</li>
+
+                        <li>Желание</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="item level-up Веб-разработка isotope-item" data-alias="html5" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(584px, 360px, 0px);">
+    <div class="thumb flip">
+
+        <!--</div>-->
+
+        <div class="wrapper">
+            <div class="recto">
+
+                <div>
+
+                    <div class="type level-up" data-type="2">
+                        <p>level-up</p>
+                    </div>
+
+                    <div class="img">
+                        <div class="course-pic" style="background-image: url(/img/htmll.png)">
+                        </div>
+
+                        <p class="date"><span>23-24</span> мая</p>
+                    </div>
+                    <div class="info" data-price="5000">
+                        <h3>HTML5 + CSS3</h3>
+                        <h4>Основы веб-разработки</h4>
+                    </div>
+
+                    <p class="price">5000p</p>
+
+                </div>
+
+            </div>
+            <div class="verso">
+                <div>
+                    <h3>Вы изучите:</h3>
+
+                    <ul>
+
+                        <li>Узнаете о разработке</li>
+
+                        <li> Научитесть писать сайты</li>
+
+                        <li>Изучите современный инструментарий</li>
+
+                    </ul>
+
+                    <h3>Пройденные темы:</h3>
+
+                    <ul>
+
+                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
+
+                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
+
+                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
+
+                        <li>ZenCoding</li>
+
+                        <li>Chrome Devtools</li>
+
+                        <li>Webstorm IDE</li>
+
+                    </ul>
+
+                    <h3>Требования</h3>
+
+                    <ul>
+
+                        <li>Знание компьютера</li>
+
+                        <li>Желание</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="item level-up Веб-разработка isotope-item" data-alias="html5" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 720px, 0px);">
+    <div class="thumb flip">
+
+        <!--</div>-->
+
+        <div class="wrapper">
+            <div class="recto">
+
+                <div>
+
+                    <div class="type level-up" data-type="2">
+                        <p>level-up</p>
+                    </div>
+
+                    <div class="img">
+                        <div class="course-pic" style="background-image: url(/img/htmll.png)">
+                        </div>
+
+                        <p class="date"><span>23-24</span> мая</p>
+                    </div>
+                    <div class="info" data-price="7000">
+                        <h3>HTML5 + CSS3</h3>
+                        <h4>Основы веб-разработки</h4>
+                    </div>
+
+                    <p class="price">7000p</p>
+
+                </div>
+
+            </div>
+            <div class="verso">
+                <div>
+                    <h3>Вы изучите:</h3>
+
+                    <ul>
+
+                        <li>Узнаете о разработке</li>
+
+                        <li> Научитесть писать сайты</li>
+
+                        <li>Изучите современный инструментарий</li>
+
+                    </ul>
+
+                    <h3>Пройденные темы:</h3>
+
+                    <ul>
+
+                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
+
+                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
+
+                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
+
+                        <li>ZenCoding</li>
+
+                        <li>Chrome Devtools</li>
+
+                        <li>Webstorm IDE</li>
+
+                    </ul>
+
+                    <h3>Требования</h3>
+
+                    <ul>
+
+                        <li>Знание компьютера</li>
+
+                        <li>Желание</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="item level-up Веб-разработка isotope-item" data-alias="html5" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(292px, 720px, 0px);">
+    <div class="thumb flip">
+
+        <!--</div>-->
+
+        <div class="wrapper">
+            <div class="recto">
+
+                <div>
+
+                    <div class="type level-up" data-type="2">
+                        <p>level-up</p>
+                    </div>
+
+                    <div class="img">
+                        <div class="course-pic" style="background-image: url(/img/htmll.png)">
+                        </div>
+
+                        <p class="date"><span>23-24</span> мая</p>
+                    </div>
+                    <div class="info" data-price="6000">
+                        <h3>HTML5 + CSS3</h3>
+                        <h4>Основы веб-разработки</h4>
+                    </div>
+
+                    <p class="price">6000p</p>
+
+                </div>
+
+            </div>
+            <div class="verso">
+                <div>
+                    <h3>Вы изучите:</h3>
+
+                    <ul>
+
+                        <li>Узнаете о разработке</li>
+
+                        <li> Научитесть писать сайты</li>
+
+                        <li>Изучите современный инструментарий</li>
+
+                    </ul>
+
+                    <h3>Пройденные темы:</h3>
+
+                    <ul>
+
+                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
+
+                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
+
+                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
+
+                        <li>ZenCoding</li>
+
+                        <li>Chrome Devtools</li>
+
+                        <li>Webstorm IDE</li>
+
+                    </ul>
+
+                    <h3>Требования</h3>
+
+                    <ul>
+
+                        <li>Знание компьютера</li>
+
+                        <li>Желание</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="item pro Веб-разработка isotope-item" data-alias="html5" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(584px, 720px, 0px);">
+    <div class="thumb flip">
+
+        <!--</div>-->
+
+        <div class="wrapper">
+            <div class="recto">
+
+                <div>
+
+                    <div class="type pro" data-type="3">
+                        <p>pro</p>
+                    </div>
+
+                    <div class="img">
+                        <div class="course-pic" style="background-image: url(/img/htmll.png)">
+                        </div>
+
+                        <p class="date"><span>23-24</span> мая</p>
+                    </div>
+                    <div class="info" data-price="5000">
+                        <h3>HTML5 + CSS3</h3>
+                        <h4>Основы веб-разработки</h4>
+                    </div>
+
+                    <p class="price">5000p</p>
+
+                </div>
+
+            </div>
+            <div class="verso">
+                <div>
+                    <h3>Вы изучите:</h3>
+
+                    <ul>
+
+                        <li>Узнаете о разработке</li>
+
+                        <li> Научитесть писать сайты</li>
+
+                        <li>Изучите современный инструментарий</li>
+
+                    </ul>
+
+                    <h3>Пройденные темы:</h3>
+
+                    <ul>
+
+                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
+
+                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
+
+                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
+
+                        <li>ZenCoding</li>
+
+                        <li>Chrome Devtools</li>
+
+                        <li>Webstorm IDE</li>
+
+                    </ul>
+
+                    <h3>Требования</h3>
+
+                    <ul>
+
+                        <li>Знание компьютера</li>
+
+                        <li>Желание</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="item pro Веб-разработка isotope-item" data-alias="html5" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 1080px, 0px);">
+    <div class="thumb flip">
+
+        <!--</div>-->
+
+        <div class="wrapper">
+            <div class="recto">
+
+                <div>
+
+                    <div class="type pro" data-type="3">
+                        <p>pro</p>
+                    </div>
+
+                    <div class="img">
+                        <div class="course-pic" style="background-image: url(/img/htmll.png)">
+                        </div>
+
+                        <p class="date"><span>23-24</span> мая</p>
+                    </div>
+                    <div class="info" data-price="5000">
+                        <h3>HTML5 + CSS3</h3>
+                        <h4>Основы веб-разработки</h4>
+                    </div>
+
+                    <p class="price">5000p</p>
+
+                </div>
+
+            </div>
+            <div class="verso">
+                <div>
+                    <h3>Вы изучите:</h3>
+
+                    <ul>
+
+                        <li>Узнаете о разработке</li>
+
+                        <li> Научитесть писать сайты</li>
+
+                        <li>Изучите современный инструментарий</li>
+
+                    </ul>
+
+                    <h3>Пройденные темы:</h3>
+
+                    <ul>
+
+                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
+
+                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
+
+                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
+
+                        <li>ZenCoding</li>
+
+                        <li>Chrome Devtools</li>
+
+                        <li>Webstorm IDE</li>
+
+                    </ul>
+
+                    <h3>Требования</h3>
+
+                    <ul>
+
+                        <li>Знание компьютера</li>
+
+                        <li>Желание</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="item pro Веб-разработка isotope-item" data-alias="html5" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(292px, 1080px, 0px);">
+    <div class="thumb flip">
+
+        <!--</div>-->
+
+        <div class="wrapper">
+            <div class="recto">
+
+                <div>
+
+                    <div class="type pro" data-type="3">
+                        <p>pro</p>
+                    </div>
+
+                    <div class="img">
+                        <div class="course-pic" style="background-image: url(/img/htmll.png)">
+                        </div>
+
+                        <p class="date"><span>23-24</span> мая</p>
+                    </div>
+                    <div class="info" data-price="4000">
+                        <h3>HTML5 + CSS3</h3>
+                        <h4>Основы веб-разработки</h4>
+                    </div>
+
+                    <p class="price">4000p</p>
+
+                </div>
+
+            </div>
+            <div class="verso">
+                <div>
+                    <h3>Вы изучите:</h3>
+
+                    <ul>
+
+                        <li>Узнаете о разработке</li>
+
+                        <li> Научитесть писать сайты</li>
+
+                        <li>Изучите современный инструментарий</li>
+
+                    </ul>
+
+                    <h3>Пройденные темы:</h3>
+
+                    <ul>
+
+                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
+
+                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
+
+                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
+
+                        <li>ZenCoding</li>
+
+                        <li>Chrome Devtools</li>
+
+                        <li>Webstorm IDE</li>
+
+                    </ul>
+
+                    <h3>Требования</h3>
+
+                    <ul>
+
+                        <li>Знание компьютера</li>
+
+                        <li>Желание</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="item pro Веб-разработка isotope-item" data-alias="html5" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(584px, 1080px, 0px);">
+    <div class="thumb flip">
+
+        <!--</div>-->
+
+        <div class="wrapper">
+            <div class="recto">
+
+                <div>
+
+                    <div class="type pro" data-type="3">
+                        <p>pro</p>
+                    </div>
+
+                    <div class="img">
+                        <div class="course-pic" style="background-image: url(/img/htmll.png)">
+                        </div>
+
+                        <p class="date"><span>23-24</span> мая</p>
+                    </div>
+                    <div class="info" data-price="3000">
+                        <h3>HTML5 + CSS3</h3>
+                        <h4>Основы веб-разработки</h4>
+                    </div>
+
+                    <p class="price">3000p</p>
+
+                </div>
+
+            </div>
+            <div class="verso">
+                <div>
+                    <h3>Вы изучите:</h3>
+
+                    <ul>
+
+                        <li>Узнаете о разработке</li>
+
+                        <li> Научитесть писать сайты</li>
+
+                        <li>Изучите современный инструментарий</li>
+
+                    </ul>
+
+                    <h3>Пройденные темы:</h3>
+
+                    <ul>
+
+                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
+
+                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
+
+                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
+
+                        <li>ZenCoding</li>
+
+                        <li>Chrome Devtools</li>
+
+                        <li>Webstorm IDE</li>
+
+                    </ul>
+
+                    <h3>Требования</h3>
+
+                    <ul>
+
+                        <li>Знание компьютера</li>
+
+                        <li>Желание</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="item pro Веб-разработка isotope-item" data-alias="html5" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 1440px, 0px);">
+    <div class="thumb flip">
+
+        <!--</div>-->
+
+        <div class="wrapper">
+            <div class="recto">
+
+                <div>
+
+                    <div class="type pro" data-type="3">
+                        <p>pro</p>
+                    </div>
+
+                    <div class="img">
+                        <div class="course-pic" style="background-image: url(/img/htmll.png)">
+                        </div>
+
+                        <p class="date"><span>23-24</span> мая</p>
+                    </div>
+                    <div class="info" data-price="3000">
+                        <h3>HTML5 + CSS3</h3>
+                        <h4>Основы веб-разработки</h4>
+                    </div>
+
+                    <p class="price">3000p</p>
+
+                </div>
+
+            </div>
+            <div class="verso">
+                <div>
+                    <h3>Вы изучите:</h3>
+
+                    <ul>
+
+                        <li>Узнаете о разработке</li>
+
+                        <li> Научитесть писать сайты</li>
+
+                        <li>Изучите современный инструментарий</li>
+
+                    </ul>
+
+                    <h3>Пройденные темы:</h3>
+
+                    <ul>
+
+                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
+
+                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
+
+                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
+
+                        <li>ZenCoding</li>
+
+                        <li>Chrome Devtools</li>
+
+                        <li>Webstorm IDE</li>
+
+                    </ul>
+
+                    <h3>Требования</h3>
+
+                    <ul>
+
+                        <li>Знание компьютера</li>
+
+                        <li>Желание</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="item pro Веб-разработка isotope-item" data-alias="html5" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(292px, 1440px, 0px);">
+    <div class="thumb flip">
+
+        <!--</div>-->
+
+        <div class="wrapper">
+            <div class="recto">
+
+                <div>
+
+                    <div class="type pro" data-type="3">
+                        <p>pro</p>
+                    </div>
+
+                    <div class="img">
+                        <div class="course-pic" style="background-image: url(/img/htmll.png)">
+                        </div>
+
+                        <p class="date"><span>23-24</span> мая</p>
+                    </div>
+                    <div class="info" data-price="5000">
+                        <h3>HTML5 + CSS3</h3>
+                        <h4>Основы веб-разработки</h4>
+                    </div>
+
+                    <p class="price">5000p</p>
+
+                </div>
+
+            </div>
+            <div class="verso">
+                <div>
+                    <h3>Вы изучите:</h3>
+
+                    <ul>
+
+                        <li>Узнаете о разработке</li>
+
+                        <li> Научитесть писать сайты</li>
+
+                        <li>Изучите современный инструментарий</li>
+
+                    </ul>
+
+                    <h3>Пройденные темы:</h3>
+
+                    <ul>
+
+                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
+
+                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
+
+                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
+
+                        <li>ZenCoding</li>
+
+                        <li>Chrome Devtools</li>
+
+                        <li>Webstorm IDE</li>
+
+                    </ul>
+
+                    <h3>Требования</h3>
+
+                    <ul>
+
+                        <li>Знание компьютера</li>
+
+                        <li>Желание</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="item pro Веб-разработка isotope-item" data-alias="html5" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(584px, 1440px, 0px);">
+    <div class="thumb flip">
+
+        <!--</div>-->
+
+        <div class="wrapper">
+            <div class="recto">
+
+                <div>
+
+                    <div class="type pro" data-type="3">
+                        <p>pro</p>
+                    </div>
+
+                    <div class="img">
+                        <div class="course-pic" style="background-image: url(/img/htmll.png)">
+                        </div>
+
+                        <p class="date"><span>23-24</span> мая</p>
+                    </div>
+                    <div class="info" data-price="4000">
+                        <h3>HTML5 + CSS3</h3>
+                        <h4>Основы веб-разработки</h4>
+                    </div>
+
+                    <p class="price">4000p</p>
+
+                </div>
+
+            </div>
+            <div class="verso">
+                <div>
+                    <h3>Вы изучите:</h3>
+
+                    <ul>
+
+                        <li>Узнаете о разработке</li>
+
+                        <li> Научитесть писать сайты</li>
+
+                        <li>Изучите современный инструментарий</li>
+
+                    </ul>
+
+                    <h3>Пройденные темы:</h3>
+
+                    <ul>
+
+                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
+
+                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
+
+                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
+
+                        <li>ZenCoding</li>
+
+                        <li>Chrome Devtools</li>
+
+                        <li>Webstorm IDE</li>
+
+                    </ul>
+
+                    <h3>Требования</h3>
+
+                    <ul>
+
+                        <li>Знание компьютера</li>
+
+                        <li>Желание</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</div><!--/row-->
+</div><!--/span-->
+
+
+</div><!--/row-->
+</div>
+
+</div>
+
+</section>
+</template>

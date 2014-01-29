@@ -1,0 +1,70 @@
+#map {
+  height: 500px;
+  width: 100%;
+  background: #ccc;
+  margin-top: -100px
+}
+
+.cities {
+  position: relative
+}
+
+.cities .rotated {
+  position: absolute;
+  background: #eee;
+  width: 110%;
+  left: -5%;
+  height: 100px;
+  top: -50px;
+  -webkit-transform: rotate(2.5deg);
+  -ms-transform: rotate(2.5deg);
+  transform: rotate(2.5deg)
+}
+
+#contacts-body .container > div {
+  margin-left: -15px;
+  margin-right: -15px
+}
+
+#contacts-body .container > div:before, #contacts-body .container > div:after {
+  content: " ";
+  display: table
+}
+
+#contacts-body .container > div:after {
+  clear: both
+}
+
+#contacts-body .container > div:before, #contacts-body .container > div:after {
+  content: " ";
+  display: table
+}
+
+#contacts-body .container > div:after {
+  clear: both
+}
+
+#contacts-body .container > div > div {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+@media (min-width: 992px) {
+  #contacts-body .container > div > div {
+    float: left;
+    width: 33.33333333333333%
+  }
+}
+
+@media (min-width: 768px) {
+  #contacts-body .container > div > div {
+    float: left;
+    width: 33.33333333333333%
+  }
+}
+
+#contacts-body .container > div > div h3 {
+  text-align: center
+}

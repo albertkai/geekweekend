@@ -1,0 +1,700 @@
+#course-pic {
+  height: 500px;
+  background: #eee;
+  margin-top: -100px;
+  background-size: cover
+}
+
+@media (max-width: 992px) {
+  #course-pic {
+    height: 400px
+  }
+}
+
+#course-pic > .container {
+  position: relative
+}
+
+#course-pic > .container h1, #course-pic > .container h2 {
+  background: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 12px 35px;
+  position: absolute;
+  opacity: .77;
+  -webkit-box-shadow: 0 0 1px #000;
+  -moz-box-shadow: 0 0 1px #000;
+  box-shadow: 0 0 1px #000
+}
+
+#course-pic > .container h1 {
+  top: 110px;
+  font-size: 60px;
+  font-weight: 100
+}
+
+#course-pic > .container h2 {
+  top: 220px;
+  font-weight: 100;
+  font-size: 40px
+}
+
+#course-pic > .container h3 {
+  position: absolute;
+  left: 65%;
+  display: inline-block;
+  top: 303px;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  opacity: .9;
+  font-size: 70px;
+  font-weight: 500;
+  color: #fff;
+  padding: 12px 45px;
+  background: #63f5fc;
+  background: -webkit-gradient(linear, right bottom, left top, color-stop(0, #63f5fc), color-stop(1, #2dffb0));
+  background: -ms-linear-gradient(bottom, #63f5fc, #2dffb0);
+  background: -moz-linear-gradient(center bottom, #63f5fc 0, #2dffb0 100%);
+  background: -o-linear-gradient(#2dffb0, #63f5fc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dffb0', endColorstr='#63f5fc', GradientType=0)
+}
+
+#course-content {
+  position: relative
+}
+
+#course-content .rotated {
+  position: absolute;
+  height: 90px;
+  width: 110%;
+  left: -5%;
+  top: -40px;
+  background: #fff;
+  -webkit-transform: rotate(0.8deg);
+  -ms-transform: rotate(0.8deg);
+  transform: rotate(0.8deg);
+  z-index: 1
+}
+
+@media (max-width: 992px) {
+  #course-content .rotated {
+    top: -30px
+  }
+}
+
+#course-content .container .row {
+  position: relative;
+  z-index: 10
+}
+
+#course-content .container .row h2 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 50px;
+  color: #bbb;
+  margin-bottom: 25px
+}
+
+#course-content .container .row article {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px
+}
+
+@media (max-width: 768px) {
+  #course-content .container .row article {
+    font-size: 14px
+  }
+}
+
+@media (min-width: 992px) {
+  #course-content .container .row article {
+    float: left;
+    width: 66.66666666666666%
+  }
+}
+
+@media (min-width: 768px) {
+  #course-content .container .row article {
+    float: left;
+    width: 66.66666666666666%
+  }
+}
+
+#course-content .container .row article .desc {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 200;
+  color: #777;
+  margin-bottom: 50px
+}
+
+#course-content .container .row article #schedule {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 45px
+}
+
+#course-content .container .row article #schedule:before, #course-content .container .row article #schedule:after {
+  content: " ";
+  display: table
+}
+
+#course-content .container .row article #schedule:after {
+  clear: both
+}
+
+#course-content .container .row article #schedule:before, #course-content .container .row article #schedule:after {
+  content: " ";
+  display: table
+}
+
+#course-content .container .row article #schedule:after {
+  clear: both
+}
+
+#course-content .container .row article #schedule > div {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+@media (min-width: 992px) {
+  #course-content .container .row article #schedule > div {
+    float: left;
+    width: 50%
+  }
+}
+
+@media (min-width: 768px) {
+  #course-content .container .row article #schedule > div {
+    float: left;
+    width: 50%
+  }
+}
+
+#course-content .container .row article #schedule > div h4 {
+  text-align: center;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #ddd;
+  margin-bottom: 17px
+}
+
+#course-content .container .row article #schedule > div > div {
+  margin-left: -15px;
+  margin-right: -15px
+}
+
+#course-content .container .row article #schedule > div > div:before, #course-content .container .row article #schedule > div > div:after {
+  content: " ";
+  display: table
+}
+
+#course-content .container .row article #schedule > div > div:after {
+  clear: both
+}
+
+#course-content .container .row article #schedule > div > div:before, #course-content .container .row article #schedule > div > div:after {
+  content: " ";
+  display: table
+}
+
+#course-content .container .row article #schedule > div > div:after {
+  clear: both
+}
+
+#course-content .container .row article #schedule > div > div p {
+  margin-bottom: 15px
+}
+
+#course-content .container .row article #schedule > div > div p:nth-child(1) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #63f5fc;
+  font-size: 22px;
+  font-weight: 100;
+  top: -3px
+}
+
+@media (min-width: 992px) {
+  #course-content .container .row article #schedule > div > div p:nth-child(1) {
+    float: left;
+    width: 25%
+  }
+}
+
+#course-content .container .row article #schedule > div > div p:nth-child(2) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 200;
+  color: #555
+}
+
+@media (min-width: 992px) {
+  #course-content .container .row article #schedule > div > div p:nth-child(2) {
+    float: left;
+    width: 75%
+  }
+}
+
+#course-content .container .row article #coach {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 40px
+}
+
+#course-content .container .row article #coach:before, #course-content .container .row article #coach:after {
+  content: " ";
+  display: table
+}
+
+#course-content .container .row article #coach:after {
+  clear: both
+}
+
+#course-content .container .row article #coach:before, #course-content .container .row article #coach:after {
+  content: " ";
+  display: table
+}
+
+#course-content .container .row article #coach:after {
+  clear: both
+}
+
+#course-content .container .row article #coach > div:nth-child(1) {
+  position: relative;
+  float: left;
+  width: 33.33333333333333%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+@media (min-width: 992px) {
+  #course-content .container .row article #coach > div:nth-child(1) {
+    float: left;
+    width: 33.33333333333333%
+  }
+}
+
+@media (min-width: 768px) {
+  #course-content .container .row article #coach > div:nth-child(1) {
+    float: left;
+    width: 33.33333333333333%
+  }
+}
+
+#course-content .container .row article #coach > div:nth-child(1) img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto
+}
+
+#course-content .container .row article #coach > div:nth-child(1) p {
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 19px;
+  font-style: italic;
+  font-weight: 400;
+  padding: 15px;
+  margin: 15px 0;
+  color: #999
+}
+
+#course-content .container .row article #coach > div:nth-child(2) {
+  left: 24px;
+  position: relative;
+  float: left;
+  width: 58.333333333333336%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #a38dff;
+  padding: 32px 27px;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  -webkit-box-shadow: 0 0 1px #a38dff;
+  -moz-box-shadow: 0 0 1px #a38dff;
+  box-shadow: 0 0 1px #a38dff
+}
+
+@media (min-width: 992px) {
+  #course-content .container .row article #coach > div:nth-child(2) {
+    float: left;
+    width: 58.333333333333336%
+  }
+}
+
+@media (min-width: 768px) {
+  #course-content .container .row article #coach > div:nth-child(2) {
+    float: left;
+    width: 58.333333333333336%
+  }
+}
+
+#course-content .container .row article #coach > div:nth-child(2) p {
+  color: #fff;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 19px
+}
+
+#course-content .container .row article #coach > div:nth-child(2) p span {
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 26px
+}
+
+#course-content .container .row article #coach > div:nth-child(2) p span:first-of-type {
+  font-weight: 200
+}
+
+#course-content .container .row article #coach > div:nth-child(2) p span:last-of-type {
+  font-weight: 600;
+  margin-top: -5px;
+  margin-bottom: 9px
+}
+
+#course-content .container .row article #coach > div:nth-child(2) i {
+  position: absolute;
+  top: 68px;
+  left: -24px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 30px solid #a38dff;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg)
+}
+
+#course-content .container .row aside {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 300px;
+  background: #eee;
+  padding: 0 40px 40px;
+  margin-top: 24px
+}
+
+@media (min-width: 992px) {
+  #course-content .container .row aside {
+    float: left;
+    width: 33.33333333333333%
+  }
+}
+
+@media (min-width: 768px) {
+  #course-content .container .row aside {
+    float: left;
+    width: 33.33333333333333%
+  }
+}
+
+#course-content .container .row aside h3 {
+  text-align: center;
+  font-style: italic;
+  color: #bbb;
+  font-size: 24px;
+  margin: 30px 0 20px
+}
+
+#course-content .container .row aside .dates {
+  position: relative;
+  top: 8px;
+  color: #63f5fc;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 100;
+  line-height: 30px
+}
+
+#course-content .container .row aside .dates span {
+  font-size: 50px;
+  font-weight: 400
+}
+
+#course-content .container .row aside ul {
+  list-style-image: url(/img/list_marker.png);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px
+}
+
+#course-content .container .row aside ul li {
+  font-size: 15px;
+  line-height: 19px;
+  color: #777;
+  margin-bottom: 15px;
+  padding-left: 7px
+}
+
+#course-content .container .row aside button {
+  width: 100%
+}
+
+#get-course-modal {
+  overflow: hidden
+}
+
+#get-course-modal .body {
+  position: relative;
+  width: 1130px;
+  overflow: hidden;
+  height: 320px;
+  -webkit-transition: all .4s cubic-bezier(0.72, .04, .465, 1.325);
+  transition: all .4s cubic-bezier(0.72, .04, .465, 1.325);
+  -webkit-transition: all all .4s cubic-bezier(0.72, .04, .465, 1.325) ease-out;
+  -moz-transition: all all .4s cubic-bezier(0.72, .04, .465, 1.325) ease-out;
+  -o-transition: all all .4s cubic-bezier(0.72, .04, .465, 1.325) ease-out;
+  transition: all all .4s cubic-bezier(0.72, .04, .465, 1.325) ease-out
+}
+
+#get-course-modal .body form .checkout-slide {
+  position: relative;
+  left: 0;
+  float: left;
+  width: 560px;
+  height: 320px
+}
+
+#get-course-modal .body form .checkout-slide label {
+  display: none !important
+}
+
+#get-course-modal .body form .checkout-slide > div {
+  margin: 10px 0
+}
+
+#get-course-modal .body form .checkout-slide > div input[type=text], #get-course-modal .body form .checkout-slide > div input[type=email], #get-course-modal .body form .checkout-slide > div input[type=tel] {
+  width: 45%
+}
+
+#get-course-modal .body form .checkout-slide > div input[type=text].valid, #get-course-modal .body form .checkout-slide > div input[type=email].valid, #get-course-modal .body form .checkout-slide > div input[type=tel].valid {
+  border-color: #2dffb0
+}
+
+#get-course-modal .body form .checkout-slide > div input[type=text].error, #get-course-modal .body form .checkout-slide > div input[type=email].error, #get-course-modal .body form .checkout-slide > div input[type=tel].error {
+  border-color: #ff8dac
+}
+
+#get-course-modal .body form .checkout-slide > div input[type=text]:nth-child(1), #get-course-modal .body form .checkout-slide > div input[type=email]:nth-child(1), #get-course-modal .body form .checkout-slide > div input[type=tel]:nth-child(1) {
+  margin-left: 4%;
+  margin-right: 1%
+}
+
+#get-course-modal .body form .checkout-slide > div > div {
+  width: 45%;
+  display: inline-block;
+  position: relative
+}
+
+#get-course-modal .body form .checkout-slide > div > div#radio-cont {
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-top: 5px
+}
+
+#get-course-modal .body form .checkout-slide > div > div .radio {
+  font-size: 14px;
+  color: #63f5fc;
+  font-weight: 200
+}
+
+#get-course-modal .body form .checkout-slide > div > div .radio:first-of-type {
+  padding-top: 1px
+}
+
+#get-course-modal .body form .checkout-slide > div > div .radio input[type=radio] {
+  margin-right: 5px
+}
+
+#get-course-modal .body form .checkout-slide > div > div:nth-child(1) {
+  margin-left: 4%;
+  margin-right: 1%
+}
+
+#get-course-modal .body form .checkout-slide > div > div .custom-select {
+  position: relative;
+  border: 2px solid #63f5fc;
+  z-index: 11;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  color: #555;
+  margin: 0;
+  cursor: pointer
+}
+
+#get-course-modal .body form .checkout-slide > div > div .custom-select > i {
+  position: absolute;
+  display: block;
+  border-top: 9px solid #63f5fc;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  right: 11px;
+  top: 11px
+}
+
+#get-course-modal .body form .checkout-slide > div > div .custom-select > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #63f5fc;
+  position: absolute;
+  top: 10px;
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 0;
+  width: 100%;
+  left: 0;
+  padding: 12px 0;
+  visibility: hidden;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  -webkit-transition: all all .4s ease ease-out;
+  -moz-transition: all all .4s ease ease-out;
+  -o-transition: all all .4s ease ease-out;
+  transition: all all .4s ease ease-out
+}
+
+#get-course-modal .body form .checkout-slide > div > div .custom-select > ul > li {
+  color: #fff;
+  padding: 0 10px
+}
+
+#get-course-modal .body form .checkout-slide > div > div .custom-select > ul > li:hover, #get-course-modal .body form .checkout-slide > div > div .custom-select > ul > li._active {
+  background: rgba(0, 0, 0, .1)
+}
+
+#get-course-modal .body form .checkout-slide > div > div .custom-select > ul._visible {
+  visibility: visible;
+  top: 40px;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: .9
+}
+
+#get-course-modal .body form .checkout-slide textarea {
+  width: 92%;
+  margin-left: 4%;
+  resize: none
+}
+
+#get-course-modal .body form .checkout-slide button {
+  float: right;
+  height: 32px;
+  color: #2dffb0;
+  line-height: 30px;
+  font-size: 17px;
+  font-weight: 100;
+  padding: 0;
+  width: 33%;
+  margin-right: 4%;
+  margin-top: 14px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  border: 2px solid #2dffb0
+}
+
+#get-course-modal .body form .checkout-slide button span {
+  position: relative;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite
+}
+
+#get-course-modal .body form .checkout-slide button:hover {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  color: #fff;
+  background: #2dffb0
+}
+
+#get-course-modal .body form .checkout-slide button.get-back {
+  float: left;
+  margin-left: 4%
+}
+
+#get-course-modal .body form .checkout-slide button.go {
+  width: 50%;
+  height: 45px;
+  margin-top: 6px;
+  font-weight: 200;
+  font-size: 24px;
+  background: #63f5fc;
+  background: -webkit-gradient(linear, right bottom, left top, color-stop(0, #63f5fc), color-stop(1, #2dffb0));
+  background: -ms-linear-gradient(bottom, #63f5fc, #2dffb0);
+  background: -moz-linear-gradient(center bottom, #63f5fc 0, #2dffb0 100%);
+  background: -o-linear-gradient(#2dffb0, #63f5fc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dffb0', endColorstr='#63f5fc', GradientType=0);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  border: 0
+}
+
+#get-course-modal .body .total {
+  width: 100%;
+  text-align: center;
+  background: #eee;
+  color: #63f5fc;
+  padding: 5px 0 15px
+}
+
+#get-course-modal .body .total span {
+  font-size: 76px;
+  font-weight: 100;
+  line-height: 65px
+}

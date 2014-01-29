@@ -1,6 +1,325 @@
 @import "/packages/bootstrap3-less/bootstrap.lessimport";
+@import "mixins.lessimport";
+@import 'modals.lessimport';
 
-body{
-  background: orange;
-  color: gray;
+
+//Base
+html{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
+body{
+  font-family: "Helvetica Neue";
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+a{
+  font-weight: 200;
+  color: @gray-light;
+}
+
+
+//Typo
+
+h1 {
+  font-weight: 100;
+  text-align: center;
+  color: #999
+}
+
+
+//Forms
+
+button {
+  color: #63f5fc;
+  background: #fff;
+  border: 2px solid #63f5fc;
+  font-weight: 200;
+  font-size: 26px;
+  padding: 5px 40px;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transition: all all .2s ease ease-out;
+  -moz-transition: all all .2s ease ease-out;
+  -o-transition: all all .2s ease ease-out;
+  transition: all all .2s ease ease-out;
+  outline: 0;
+  text-align: center
+}
+
+button:hover {
+  background: #63f5fc;
+  color: #fff;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg)
+}
+
+input[type=text], input[type=email], input[type=tel], textarea {
+  line-height: 32px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  border: 2px solid #63f5fc;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #555
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 5px #2dffb0;
+  -moz-box-shadow: 0 0 5px #2dffb0;
+  box-shadow: 0 0 5px #2dffb0
+}
+
+input[type=text].valid, input[type=email].valid, input[type=tel].valid, textarea.valid {
+  border-color: #2dffb0
+}
+
+input[type=text].error, input[type=email].error, input[type=tel].error, textarea.error {
+  border-color: #ff8dac
+}
+
+input[type=text], input[type=email], input[type=tel] {
+  height: 32px
+}
+
+input[type=radio] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  display: inline-block;
+  cursor: pointer
+}
+
+
+//Icons
+
+i.icons {
+  display: inline-block;
+  font-style: normal;
+  background-repeat: no-repeat
+}
+
+i.icons.quot-left {
+  width: 46px;
+  height: 50px;
+  background-image: url(/img/quot_left.png)
+}
+
+i.icons.quot-right {
+  width: 46px;
+  height: 50px;
+  background-image: url(/img/quot_right.png)
+}
+
+i.icons.arrow-left {
+  height: 65px;
+  width: 33px;
+  background-image: url(/img/arrow_left.png)
+}
+
+i.icons.arrow-right {
+  height: 65px;
+  width: 33px;
+  background-image: url(/img/arrow_right.png)
+}
+
+i.icons.slide-icon {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 2px solid #63f5fc;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  -moz-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 3px #ccc
+}
+
+i.icons.slide-icon.sc1 {
+  background-image: url(/img/sc_1.png)
+}
+
+i.icons.slide-icon.sc2 {
+  background-image: url(/img/sc_2.png)
+}
+
+i.icons.slide-icon.sc3 {
+  background-image: url(/img/sc_3.png)
+}
+
+
+header {
+  margin-bottom: 0 !important;
+  background-color: #fff !important;
+  position: relative;
+  #logo {
+    width: 245px;
+    height: 50px;
+    position: relative;
+    top: 15px;
+    padding: 0;
+    img{
+      width: 100%
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    nav {
+      position: relative;
+      top: 20px;
+      float: right;
+      a {
+        padding: 3px 10px;
+        margin-left: 10px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        &:hover {
+          background: #63f5fc;
+          background: -webkit-gradient(linear, right bottom, left top, color-stop(0, #63f5fc), color-stop(1, #2dffb0));
+          background: -ms-linear-gradient(bottom, #63f5fc, #2dffb0);
+          background: -moz-linear-gradient(center bottom, #63f5fc 0, #2dffb0 100%);
+          background: -o-linear-gradient(#2dffb0, #63f5fc);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dffb0', endColorstr='#63f5fc', GradientType=0);
+          color: #fff !important
+        }
+      }
+    }
+  }
+  .rotated {
+    z-index: 1;
+    position: absolute;
+    width: 110%;
+    height: 80px;
+    left: -5%;
+    top: -9px;
+    background: #fff;
+    -webkit-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 7px rgba(0, 0, 0, .3)
+  }
+}
+
+
+@media (max-width: 480px) {
+  header #logo {
+    width: 220px
+  }
+}
+
+@media (min-width: 1200px) {
+  header #logo {
+    width: 300px
+  }
+}
+
+@media (max-width: 992px) {
+  header .container nav {
+    float: none
+  }
+}
+
+@media (max-width: 768px) {
+  header .rotated {
+    top: 15px
+  }
+}
+
+footer {
+  position: relative;
+  min-height: 200px;
+  background: @gray-darker;
+  margin-top: 100px;
+  .rotated {
+    z-index: 1;
+    position: absolute;
+    width: 110%;
+    height: 80px;
+    left: -5%;
+    top: -60px;
+    background: @gray-darker;
+    .rotate(-1deg);
+    .box-shadow(rgba(0, 0, 0, .3));
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+    > div {
+      .make-row();
+      div:nth-child(1) {
+        .make-md-column(9);
+        .make-row();
+        div {
+          .make-md-column(4);
+          text-align: center;
+          margin-top: 30px;
+          a {
+            display: inline-block;
+            width: 110px;
+            height: 110px;
+            line-height: 100px;
+            background-color: #444444;
+            .rounded(100px);
+            font-size: 60px;
+            color: white;
+            .transition(all .3s ease);
+            &:hover {
+              &#vk {
+                background-color: #45668e;
+              }
+              &#facebook {
+                background-color: #3B5998;
+              }
+              &#twitter {
+                background-color: #4099FF;
+              }
+            }
+          }
+        }
+      }
+      div:nth-child(2) {
+        .make-md-column(3);
+        nav {
+          ul {
+            .rotate(-1.5deg);
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+              a {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@import 'pages/about.lessimport';
+@import 'pages/home.lessimport';
+@import 'pages/courses.lessimport';
+@import 'pages/course.lessimport';
+@import 'pages/contacts.lessimport';

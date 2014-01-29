@@ -23,20 +23,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/main.html">
+      <file leaf-file-name="about.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="7" selection-start="74" selection-end="74" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="195">
+            <state line="62" column="14" selection-start="3954" selection-end="3954" vertical-scroll-proportion="-16.166666" vertical-offset="542" max-vertical-offset="1080">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/views/layout.html">
+      <file leaf-file-name="course.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/course.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="35" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.438326" vertical-offset="221" max-vertical-offset="735">
-              <folding />
+            <state line="227" column="39" selection-start="8609" selection-end="8609" vertical-scroll-proportion="-2.4166667" vertical-offset="3347" max-vertical-offset="3885">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,25 +48,43 @@
       <file leaf-file-name="main.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/less/main.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="1" selection-start="103" selection-end="103" vertical-scroll-proportion="-1.5306122" vertical-offset="0" max-vertical-offset="165">
+            <state line="9" column="21" selection-start="183" selection-end="183" vertical-scroll-proportion="-1.0388349" vertical-offset="28" max-vertical-offset="4950">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/index.html">
+      <file leaf-file-name="home.lessimport" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/less/pages/home.lessimport">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
+            <state line="6" column="1" selection-start="108" selection-end="108" vertical-scroll-proportion="-1.8367347" vertical-offset="0" max-vertical-offset="13275">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="geekweekend.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/geekweekend.js">
+      <file leaf-file-name="router.coffee" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/coffee/router.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+            <state line="18" column="22" selection-start="200" selection-end="200" vertical-scroll-proportion="0.56485355" vertical-offset="0" max-vertical-offset="478">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/layout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="78" selection-start="3091" selection-end="3091" vertical-scroll-proportion="6.625" vertical-offset="1179" max-vertical-offset="1695">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contacts.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/contacts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="10" selection-start="425" selection-end="425" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="345">
               <folding />
             </state>
           </provider>
@@ -81,8 +103,25 @@
         <option value="$PROJECT_DIR$/mrtstr.sh" />
         <option value="$USER_HOME$/Desktop/mrtstr.sh" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/client/less/main.less" />
+        <option value="$PROJECT_DIR$/client/css.css" />
+        <option value="$PROJECT_DIR$/client/less/mixins.lessimport" />
+        <option value="$PROJECT_DIR$/client/coffee/main.coffee" />
+        <option value="$PROJECT_DIR$/geekweekend.js" />
+        <option value="$PROJECT_DIR$/client/main.html" />
+        <option value="$PROJECT_DIR$/client/views/home.html" />
+        <option value="$PROJECT_DIR$/client/less/modals.lessimport" />
+        <option value="$PROJECT_DIR$/client/views/courses.html" />
+        <option value="$PROJECT_DIR$/client/less/pages/courses.lessimport" />
+        <option value="$PROJECT_DIR$/client/views/about.html" />
+        <option value="$PROJECT_DIR$/client/views/course.html" />
+        <option value="$PROJECT_DIR$/client/less/pages/course.lessimport" />
+        <option value="$PROJECT_DIR$/client/views/contacts.html" />
+        <option value="$PROJECT_DIR$/client/less/pages/contacts.lessimport" />
+        <option value="$PROJECT_DIR$/client/less/pages/about.lessimport" />
+        <option value="$PROJECT_DIR$/client/coffee/router.coffee" />
         <option value="$PROJECT_DIR$/client/views/layout.html" />
+        <option value="$PROJECT_DIR$/client/less/pages/home.lessimport" />
+        <option value="$PROJECT_DIR$/client/less/main.less" />
       </list>
     </option>
   </component>
@@ -164,7 +203,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geekweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geekweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coffee" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -176,6 +233,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -237,14 +296,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1400" height="824" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32980132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -289,16 +348,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geekweekend.js">
+    <entry file="file://$PROJECT_DIR$/client/less/mixins.lessimport">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="478">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/less/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="1" selection-start="103" selection-end="103" vertical-scroll-proportion="-1.5306122" vertical-offset="0" max-vertical-offset="165">
+        <state line="155" column="1" selection-start="5402" selection-end="5402" vertical-scroll-proportion="-8.142858" vertical-offset="1926" max-vertical-offset="2415">
           <folding />
         </state>
       </provider>
@@ -312,14 +364,152 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="7" selection-start="74" selection-end="74" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="195">
+        <state line="5" column="6" selection-start="154" selection-end="154" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="222" column="14" selection-start="8255" selection-end="8255" vertical-scroll-proportion="0.0" vertical-offset="2895" max-vertical-offset="3450">
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#3;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#3;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#section#3;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#section#3;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#section#3;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#4;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/less/modals.lessimport">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="268" column="0" selection-start="6097" selection-end="6097" vertical-scroll-proportion="-7.6734695" vertical-offset="3644" max-vertical-offset="4110">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/courses.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1265" column="10" selection-start="32715" selection-end="32715" vertical-scroll-proportion="-790.625" vertical-offset="0" max-vertical-offset="19080">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#6;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#8;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#8;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#9;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#9;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#10;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#10;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#11;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#11;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#12;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#12;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#13;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#13;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#14;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#14;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="227" column="39" selection-start="8609" selection-end="8609" vertical-scroll-proportion="-2.4166667" vertical-offset="3347" max-vertical-offset="3885">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/contacts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="10" selection-start="425" selection-end="425" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/less/pages/contacts.lessimport">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="0" selection-start="1207" selection-end="1207" vertical-scroll-proportion="-7.6734695" vertical-offset="674" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/less/pages/course.lessimport">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="700" column="0" selection-start="16615" selection-end="16615" vertical-scroll-proportion="-9.551021" vertical-offset="10032" max-vertical-offset="10590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/less/pages/about.lessimport">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="324" column="1" selection-start="5735" selection-end="5735" vertical-scroll-proportion="0.63170165" vertical-offset="4589" max-vertical-offset="5055">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="14" selection-start="3954" selection-end="3954" vertical-scroll-proportion="-16.166666" vertical-offset="542" max-vertical-offset="1080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/less/pages/courses.lessimport">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="476" column="0" selection-start="11672" selection-end="11672" vertical-scroll-proportion="0.90384614" vertical-offset="6764" max-vertical-offset="7230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="21" selection-start="183" selection-end="183" vertical-scroll-proportion="-1.0388349" vertical-offset="28" max-vertical-offset="4950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/less/pages/home.lessimport">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="1" selection-start="108" selection-end="108" vertical-scroll-proportion="-1.8367347" vertical-offset="0" max-vertical-offset="13275">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="35" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.438326" vertical-offset="221" max-vertical-offset="735">
+        <state line="68" column="78" selection-start="3091" selection-end="3091" vertical-scroll-proportion="6.625" vertical-offset="1179" max-vertical-offset="1695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/coffee/router.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="22" selection-start="200" selection-end="200" vertical-scroll-proportion="0.56485355" vertical-offset="0" max-vertical-offset="478">
           <folding />
         </state>
       </provider>

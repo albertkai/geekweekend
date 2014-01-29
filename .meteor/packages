@@ -10,3 +10,4 @@ preserve-inputs
 bootstrap3-less
 iron-router
 less
+coffeescript
