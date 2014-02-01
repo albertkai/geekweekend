@@ -3,7 +3,8 @@
   "dependencies": {
     "basePackages": {
       "bootstrap3-less": {},
-      "iron-router": {}
+      "iron-router": {},
+      "auto-nprogress": {}
     },
     "packages": {
       "bootstrap3-less": {
@@ -15,6 +16,16 @@
         "git": "https://github.com/EventedMind/iron-router.git",
         "tag": "v0.6.2",
         "commit": "ce56e58b45624dce992490f3a1c10f10d3948bae"
+      },
+      "auto-nprogress": {
+        "git": "https://github.com/settinghead/meteor-auto-nprogress.git",
+        "tag": "v0.1.5",
+        "commit": "58ba7efdd2919a165f1b8a27141198bb6ba9d4ac"
+      },
+      "nprogress": {
+        "git": "https://github.com/zhouzhuojie/meteor-nprogress.git",
+        "tag": "v0.0.3",
+        "commit": "ffd1c5dd400af64121197f4e637a215c4b6b1fc7"
       }
     }
   }

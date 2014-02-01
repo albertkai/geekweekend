@@ -3,6 +3,12 @@
 @import 'modals.lessimport';
 
 
+
+//Variables
+
+@blue: #63f5fc;
+@green: #2dffb0;
+
 //Base
 html{
   width: 100%;
@@ -191,6 +197,7 @@ header {
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
         border-radius: 20px;
+        color: @gray-light;
         &:hover {
           background: #63f5fc;
           background: -webkit-gradient(linear, right bottom, left top, color-stop(0, #63f5fc), color-stop(1, #2dffb0));
@@ -280,7 +287,7 @@ footer {
             line-height: 100px;
             background-color: #444444;
             .rounded(100px);
-            font-size: 60px;
+            font-size: 50px;
             color: white;
             .transition(all .3s ease);
             &:hover {

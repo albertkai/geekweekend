@@ -1,18 +1,69 @@
 <template name="contacts">
-    <div id="map"></div>
-    <div id="contacts-body">
-        <div class="container">
-            <div>
+    {{#constant}}
+    <section id="map"></section>
+    {{/constant}}
+    <section id="contacts-body">
+        <div class="rotated"></div>
+        <div class="overlay">
+            <div class="container">
                 <div>
-                    <h3>Москва</h3>
-                </div>
-                <div>
-                    <h3>Санкт-Петербург</h3>
-                </div>
-                <div>
-                    <h3>Киев</h3>
+                    <div>
+                        <h3 class="_active">Москва</h3>
+
+                        <div>
+                            <div><i class="fa fa-phone"></i></div>
+                            <div>+7(495)659-54-54</div>
+                        </div>
+                        <div>
+                            <div><i class="fa fa-envelope"></i></div>
+                            <div>msk@geekweekend.ru</div>
+                        </div>
+
+                        <div>
+                            <div><i class="fa fa-map-marker"></i></div>
+                            <div>Москва, ул. Строителей 132 строение 3</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Санкт-Петербург</h3>
+
+                        <div>
+                            <div><i class="fa fa-phone"></i></div>
+                            <div>+7(495)659-54-54</div>
+                        </div>
+                        <div>
+                            <div><i class="fa fa-envelope"></i></div>
+                            <div>msk@geekweekend.ru</div>
+                        </div>
+
+                        <div>
+                            <div><i class="fa fa-map-marker"></i></div>
+                            <div>Москва, ул. Строителей 132 строение 3</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Киев</h3>
+
+                        <div>
+                            <div><i class="fa fa-phone"></i></div>
+                            <div>+7(495)659-54-54</div>
+                        </div>
+                        <div>
+                            <div><i class="fa fa-envelope"></i></div>
+                            <div>msk@geekweekend.ru</div>
+                        </div>
+
+                        <div>
+                            <div><i class="fa fa-map-marker"></i></div>
+                            <div>Москва, ул. Строителей 132 строение 3</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="about-online">
+        <h3>МОЖЕТЕ ЗАНИМАТЬСЯ ОНЛАЙН!</h3>
+        <h4>Уточняйте информацию непосредственно на странице курса!</h4>
+    </section>
 </template>
