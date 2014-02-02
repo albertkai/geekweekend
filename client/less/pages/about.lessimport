@@ -330,3 +330,26 @@
     width: 100%
   }
 }
+
+
+
+#philosophy{
+  .container{
+    h1{
+      text-align: center;
+    }
+    >div{
+      .make-row();
+      >div{
+        &:nth-child(1){
+          .make-md-column(5);
+          text-align: center;
+        }
+        &:nth-child(2){
+          .make-md-column(7);
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}

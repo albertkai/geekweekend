@@ -1,0 +1,48 @@
+<template name="collabModal">
+
+    <div id="collab-modal" class="r-modal">
+        <div class="close"><span class="glyphicon glyphicon-remove-sign"></span></div>
+
+        <div class="header">
+            <h1>МЫ ИЩЕМ ТРЕНЕРОВ</h1>
+            Если у вас есть интересная идея, то мы будем рады вашим предложениям!
+        </div>
+
+        <div class="body">
+            <form id="collab-form" action="">
+                <div>
+
+                    <div>
+                        <div id="collab-city" class="custom-select" data-value="moscow">
+                            <p>МОСКВА</p>
+                            <i></i>
+                            <ul>
+
+                                <li data-value="Москва">Москва</li>
+
+                                <li data-value="Санкт-Петербург">Санкт-Петербург</li>
+
+                                <li data-value="Киев">Киев</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <input type="text" class="required" data-rule-minlength="2" name="secondName" id="collab-theme" placeholder="ТЕМА КУРСА*">
+                </div>
+                <textarea name="" class="required" data-rule-minlength="2" id="collab-text" cols="30" rows="3" placeholder="ОПИСАНИЕ КУРСА"></textarea>
+                <div>
+                    <input type="text" class="required" data-rule-minlength="2" name="firstName" id="collab-first-name" placeholder="ИМЯ*">
+                    <input type="text" class="required text" data-rule-minlength="2" name="secondName" id="collab-second-name" placeholder="ФАМИЛИЯ*">
+                </div>
+                <div>
+                    <input type="tel" class="required phone" data-rule-minlength="2" name="tel" id="collab-tel" placeholder="ТЕЛЕФОН*">
+                    <input type="email" class="required email" data-rule-minlength="2" name="email" id="collab-email" placeholder="E-MAIL*">
+                </div>
+                <button class="go">ОТПРАВИТЬ</button>
+            </form>
+        </div>
+
+    </div>
+
+</template>

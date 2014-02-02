@@ -7,7 +7,19 @@ Template.contacts.rendered = ->
 @initializeMap = ->
 
   mapOptions = {
-    zoom: 12
+    lat:59.9386505,
+    lng:30.3730258,
+    zoom:13,
+    zoomControl:true,
+    zoomControlOpt:{
+      style:"MEDIUM",
+      position:"RIGHT_BOTTOM"
+    },
+    panControl:true,
+    streetViewControl:false,
+    mapTypeControl:false,
+    overviewMapControl:false,
+    scrollwheel:false
   }
 
   @map  = new google.maps.Map(document.getElementById('map'), mapOptions)
@@ -15,7 +27,7 @@ Template.contacts.rendered = ->
     console.log("Tiles loaded")
 
 
-#var map = new GMaps({
+##var map = new GMaps({
 #  el:"#map",
 #  lat:59.9386505,
 #  lng:30.3730258,
@@ -30,7 +42,7 @@ Template.contacts.rendered = ->
 #  mapTypeControl:false,
 #  overviewMapControl:false,
 #  scrollwheel:false
-#});
+##});
 
   styles = [
     {

@@ -1,0 +1,1 @@
+@Trainers = new Meteor.Collection('trainers')
