@@ -599,11 +599,11 @@
             }
             .image{
               position: relative;
-              overflow: hidden !important;
               width: 190px;
               height: 190px;
               margin: 0 auto;
               .rounded(100px);
+              z-index: 1;
               #border-radius-fix{
                 width: 190px;
                 height: 190px;
@@ -613,6 +613,17 @@
                 z-index: 2;
                 left: -30px;
                 top: -30px;
+                .rounded(140px);
+              }
+              .border-overlay{
+                width: 190px;
+                height: 190px;
+                position: absolute;
+                border: 7px solid @gray-lighter;
+                .box-sizing(content-box);
+                z-index: 3;
+                left: -7px;
+                top: -7px;
                 .rounded(140px);
               }
               .pic{
@@ -643,6 +654,8 @@
               }
             }
             .desc{
+              position: relative;
+              z-index: 2;
               h3{
                 text-align: center;
                 font-weight: 200;

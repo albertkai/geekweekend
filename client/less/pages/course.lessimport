@@ -1,5 +1,5 @@
 #course-pic {
-  height: 500px;
+  height: 540px;
   background: #eee;
   margin-top: -100px;
   background-size: cover
@@ -7,7 +7,7 @@
 
 @media (max-width: 992px) {
   #course-pic {
-    height: 400px
+    height: 400px;
   }
 }
 
@@ -28,27 +28,27 @@
 }
 
 #course-pic > .container h1 {
-  top: 110px;
+  top: 126px;
   font-size: 60px;
-  font-weight: 100
+  font-weight: 100;
+  text-transform: uppercase;
+  .rotate(-1deg);
 }
 
 #course-pic > .container h2 {
-  top: 220px;
+  top: 230px;
+  left: 60px;
   font-weight: 100;
-  font-size: 40px
+  font-size: 40px;
+  .rotate(2deg);
 }
 
 #course-pic > .container h3 {
   position: absolute;
-  left: 65%;
+  left: 40px;
   display: inline-block;
   top: 303px;
-  -webkit-transform: rotate(-2deg);
-  -moz-transform: rotate(-2deg);
-  -o-transform: rotate(-2deg);
-  -ms-transform: rotate(-2deg);
-  transform: rotate(-2deg);
+  .rotate(-1deg);
   opacity: .9;
   font-size: 70px;
   font-weight: 500;
@@ -474,12 +474,7 @@
   width: 1130px;
   overflow: hidden;
   height: 320px;
-  -webkit-transition: all .4s cubic-bezier(0.72, .04, .465, 1.325);
-  transition: all .4s cubic-bezier(0.72, .04, .465, 1.325);
-  -webkit-transition: all all .4s cubic-bezier(0.72, .04, .465, 1.325) ease-out;
-  -moz-transition: all all .4s cubic-bezier(0.72, .04, .465, 1.325) ease-out;
-  -o-transition: all all .4s cubic-bezier(0.72, .04, .465, 1.325) ease-out;
-  transition: all all .4s cubic-bezier(0.72, .04, .465, 1.325) ease-out
+  .transition(.4s, cubic-bezier(0.72, .04, .465, 1.325));
 }
 
 #get-course-modal .body form .checkout-slide {
@@ -570,7 +565,7 @@
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   right: 11px;
-  top: 11px
+  top: 11px;
 }
 
 #get-course-modal .body form .checkout-slide > div > div .custom-select > ul {
@@ -593,12 +588,7 @@
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   border-radius: 16px;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-  -webkit-transition: all all .4s ease ease-out;
-  -moz-transition: all all .4s ease ease-out;
-  -o-transition: all all .4s ease ease-out;
-  transition: all all .4s ease ease-out
+  .transition(.4s, ease);
 }
 
 #get-course-modal .body form .checkout-slide > div > div .custom-select > ul > li {

@@ -261,9 +261,9 @@
   z-index: 1;
   position: absolute;
   width: 110%;
-  height: 40px;
+  height: 70px;
   left: -5%;
-  top: -29px;
+  top: -39px;
   background: #eee;
   -webkit-transform: rotate(-1deg);
   -ms-transform: rotate(-1deg);
@@ -335,25 +335,28 @@
 
 
 #philosophy{
-  padding-bottom: 60px;
+  padding-bottom: 80px;
   margin-bottom: -60px;
   .container{
     h1{
       text-align: center;
+      margin: 20px 0;
     }
     >div{
       .make-row();
       >div{
         &:nth-child(1){
-          .make-md-column(5);
+          .make-md-column(6);
           text-align: center;
         }
         &:nth-child(2){
-          .make-md-column(7);
+          .make-md-column(6);
           padding-right: 20px;
+          padding-top: 30px;
           margin-top: 25px;
           font-weight: 200;
           color: @gray;
+          text-align: justify;
         }
       }
     }
