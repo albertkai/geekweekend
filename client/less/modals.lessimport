@@ -40,7 +40,10 @@
 
 .r-modal .close {
   top: 10px;
-  right: 10px
+  right: 10px;
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
 }
 
 .r-modal .header {

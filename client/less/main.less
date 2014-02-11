@@ -1,5 +1,6 @@
 @import "/packages/bootstrap3-less/bootstrap.lessimport";
-@import "mixins.lessimport";
+@import "plugins/mixins.lessimport";
+@import "plugins/animo.lessimport";
 @import 'modals.lessimport';
 
 
@@ -8,6 +9,7 @@
 
 @blue: #63f5fc;
 @green: #2dffb0;
+@violet: #a38dff;
 
 //Base
 html{
@@ -179,10 +181,9 @@ header {
     top: 15px;
     padding: 0;
     img{
-      width: 100%
+      width: 100%;
     }
   }
-
   .container {
     position: relative;
     z-index: 2;
@@ -214,9 +215,9 @@ header {
     z-index: 1;
     position: absolute;
     width: 110%;
-    height: 80px;
+    height: 90px;
     left: -5%;
-    top: -9px;
+    top: -20px;
     background: #fff;
     -webkit-transform: rotate(-1deg);
     -ms-transform: rotate(-1deg);

@@ -1,5 +1,25 @@
 Template.course.rendered = ->
-  $('#course-pic').scrolly({bgParallax: true})
-  $('#course-pic h1').attr('data-stellar-ratio', .7)
-  $('#course-pic h2').attr('data-stellar-ratio', .8)
-  $('#course-pic h3').scrolly()
+  $('#get-course').waypoint ->
+    console.log 'yo'
+  , {offset: 400}
+
+
+Template.course.helpers {
+  trainer: ->
+    Trainers.findOne({id: @trainer})
+  getType: ->
+    if @type is 1
+      'kick-start'
+    else if @type is 2
+      'level-up'
+    else if @type is 3
+      'pro'
+  city: ->
+    Cities.findOne({alias: Session.get('city')})
+}
+
+Template.course.events {
+  'click #get-course': ->
+    $('.modal-overlay').addClass('_opened')
+    $('#get-course-modal').css('visibility', 'visible').removeClass('flipOutY').addClass('animated flipInY')
+}

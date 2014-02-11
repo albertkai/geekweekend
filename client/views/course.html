@@ -1,7 +1,7 @@
 <template name="course">
 
     <div id="get-course-modal" class="r-modal">
-        <div class="close"><span class="glyphicon glyphicon-remove-sign"></span></div>
+        <div class="close"><i class="fa fa-rouble"></i></div>
         <div class="header">
             ЗАПИСЬ НА КУРС <br>
             <span>HTML5 + CSS3</span>
@@ -79,15 +79,15 @@
         </div>
     </div>
 
-    <section id="course-pic" data-velocity=".8" style="background-image: url(/img/course_pic.jpg);">
+    <section id="course-pic" data-velocity=".8" style="background-image: url(/img/{{pic}});">
         <div class="container">
-            <h1 data-velocity=".8">HTML5 + CSS3</h1>
-            <h2 data-velocity=".8">Основы веб-разработки</h2>
-            <h3 data-stellar-ratio="1.4">5000р</h3>
+            <h1 data-velocity=".8">{{title}}</h1>
+            <h2 data-velocity=".8">{{shortDesc}}</h2>
+            <h3 data-stellar-ratio="1.4">{{price}}<i class="fa fa-rouble"></i></h3>
         </div>
     </section>
 
-    <section id="course-content" data-price="5000">
+    <section id="course-content" data-price="{{price}}">
 
         <div class="rotated"></div>
 
@@ -98,9 +98,7 @@
 
                     <h2>О КУРСЕ</h2>
 
-                    <p class="desc">
-                        Данный курс - лучшее, что может предложить индустрия на данный момент! Вы узнаете что же такое HTML и CSS, как строится веб страница и что это вообще такое? Опытный тренер расскажет вам о том, как здорово ему живется!
-                    </p>
+                    <p class="desc">{{desc}}</p>
 
                     <h2>ПРОГРАММА</h2>
 
@@ -109,26 +107,13 @@
                         <div>
                             <h4>Суббота</h4>
 
-
-                            <div>
-                                <p>12:00</p>
-                                <p>Знакомимся</p>
-                            </div>
-
-                            <div>
-                                <p>13:00</p>
-                                <p>Учимся ходить, проходим основы</p>
-                            </div>
-
-                            <div>
-                                <p>15:00</p>
-                                <p>Начинаем активно обдумывать происходящее</p>
-                            </div>
-
-                            <div>
-                                <p>17:00</p>
-                                <p>Красиво уходим на закат</p>
-                            </div>
+                            {{#each schedule.saturday}}
+                                <div>
+                                {{#each this}}
+                                    <p>{{this}}</p>
+                                {{/each}}
+                                </div>
+                            {{/each}}
 
                         </div>
 
@@ -136,25 +121,13 @@
                             <h4>Воскресенье</h4>
 
 
+                            {{#each schedule.sunday}}
                             <div>
-                                <p>12:00</p>
-                                <p>Проверяем домашнее задание, разьираем ошибки</p>
+                                {{#each this}}
+                                <p>{{this}}</p>
+                                {{/each}}
                             </div>
-
-                            <div>
-                                <p>13:00</p>
-                                <p>Начинаем делать новый интересный сайт, учимся изобретать</p>
-                            </div>
-
-                            <div>
-                                <p>15:00</p>
-                                <p>Проходим Twitter Bootstrap</p>
-                            </div>
-
-                            <div>
-                                <p>17:00</p>
-                                <p>Начинаем активно ихучать новое</p>
-                            </div>
+                            {{/each}}
 
                         </div>
 
@@ -164,21 +137,25 @@
 
                     <div id="coach">
 
+                        {{#with trainer}}
+
 
                         <div>
-                            <img src="/img/trainer_pic.jpg" alt="">
+                            <img src="/img/{{pic}}" alt="">
 
-                            <p>HTML5 CSS3 JS/Jquery UI/UX Node.js Backbone.js Meteor.js </p>
+                            <p>{{#each skills}}{{this}} {{/each}}</p>
                         </div>
                         <div>
                             <p>
-                                <span>Альберт</span>
-                                <span>Кайгородов</span>
-                                Занимется веб-разработкой с 2007 года, является frontend-разработчиком высшего класса.                                      Сотрудничал с такими компаниями как Газпром, Сибур, ЛенСтройТрест, Альфа Капитал и т.д.                                      P.S. Этот сайт - его работа от дизайна                                      до деплоя.
+                                <span>{{name}}</span>
+                                <span>{{secondName}}</span>
+                                {{about}}
                             </p>
                             <i></i>
 
                         </div>
+
+                        {{/with}}
 
 
                     </div>
@@ -187,6 +164,10 @@
                 </article>
 
                 <aside>
+
+                    <h3>Город: </h3>
+
+                    <p class="city">{{city.name}}</p>
 
                     <h3>Ближайшие даты:</h3>
 
@@ -199,11 +180,9 @@
 
                     <ul>
 
-                        <li>Узнаете о разработке</li>
-
-                        <li> Научитесть писать сайты</li>
-
-                        <li>Изучите современный инструментарий</li>
+                        {{#each skills}}
+                            <li>{{this}}</li>
+                        {{/each}}
 
                     </ul>
 
@@ -211,17 +190,9 @@
 
                     <ul>
 
-                        <li>HTML5: основы, теги и аттрибуты, лучшие практики</li>
-
-                        <li>CSS3: основы, box-model, поток, лучшие практики</li>
-
-                        <li>HTML5 Boilerplate и Twitter Bootstrap</li>
-
-                        <li>ZenCoding</li>
-
-                        <li>Chrome Devtools</li>
-
-                        <li>Webstorm IDE</li>
+                        {{#each topics}}
+                        <li>{{this}}</li>
+                        {{/each}}
 
                     </ul>
 
@@ -229,9 +200,9 @@
 
                     <ul>
 
-                        <li>Знание компьютера</li>
-
-                        <li>Желание</li>
+                        {{#each require}}
+                        <li>{{this}}</li>
+                        {{/each}}
 
                     </ul>
 
@@ -240,7 +211,7 @@
                     <h3>Либо по телефону:</h3>
 
                     <p class="dates">
-                        (812)320-08-08
+                        {{city.phone}}
                     </p>
 
                 </aside>

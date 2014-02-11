@@ -1,32 +1,32 @@
 <template name="home">
     <section id="slider">
-        <div id="slider-arrows">
+        <div id="slider-arrows" class="container">
             <i class="icons arrow-left"></i>
             <i class="icons arrow-right"></i>
         </div>
-        <ul style="width: 4744px; left: 0px;">
-            <li style="width: 1548px;">
+        <ul>
+            <li>
                 <div id="pic1" class="slider-pic"></div>
                 <div class="container">
-                    <div class="animating slider-header _animated">Самый классный</div>
-                    <div class="animating slider-header _animated">способ</div>
-                    <div class="animating slider-header _animated">изучать новое</div>
+                    <div class="animating slider-header">Самый классный</div>
+                    <div class="animating slider-header">способ</div>
+                    <div class="animating slider-header">изучать новое</div>
                 </div>
             </li>
-            <li style="width: 1548px;">
+            <li>
                 <div id="pic2" class="slider-pic"></div>
                 <div class="container">
-                    <div class="animating slider-header _animated">Уникальный</div>
-                    <div class="animating slider-header _animated">подход</div>
-                    <div class="animating slider-header _animated">к обучению</div>
+                    <div class="animating slider-header">Уникальный</div>
+                    <div class="animating slider-header">подход</div>
+                    <div class="animating slider-header">к обучению</div>
                 </div>
             </li>
-            <li style="width: 1548px;">
+            <li>
                 <div id="pic3" class="slider-pic"></div>
                 <div class="container">
-                    <div class="animating slider-header _animated">Преподаватели -</div>
-                    <div class="animating slider-header _animated">мастера</div>
-                    <div class="animating slider-header _animated">своего дела</div>
+                    <div class="animating slider-header">Преподаватели -</div>
+                    <div class="animating slider-header">мастера</div>
+                    <div class="animating slider-header">своего дела</div>
                 </div>
             </li>
         </ul>
@@ -103,12 +103,14 @@
 
                     {{#each courses}}
 
-                    <div>
+                    <div class="item" data-alias="{{alias}}">
 
                         <div class="type pro" data-type="{{type}}"></div>
 
-                        <div class="img">
+                        <div class="image">
+                            <div id="border-radius-fix"></div>
                             <div class="pic" style="background-image: url(img/{{pic}})"></div>
+                            <h5 data-price="{{price}}">{{price}}<i class="fa fa-rouble"></i></h5>
                         </div>
 
 
@@ -118,7 +120,6 @@
                         </div>
 
                         <div class="info">
-                            <h5 data-price="{{price}}">{{price}}<i class="fa fa-rouble"></i></h5>
                             <h6>22-24 мая</h6>
                         </div>
 
@@ -149,93 +150,6 @@
                     <!--</div>-->
 
 
-                    <!--<div class="pop">-->
-
-                        <!--<div class="type pro" data-type="3"></div>-->
-
-                        <!--<div class="img">-->
-                            <!--<div class="pic" style="background-image: url(img/htmll.png)"></div>-->
-                        <!--</div>-->
-
-
-                        <!--<div class="desc">-->
-                            <!--<h3>HTML5 + CSS3</h3>-->
-                            <!--<p>Основы веб-разработки</p>-->
-                        <!--</div>-->
-
-                        <!--<div class="info">-->
-                            <!--<h5>5000р</h5>-->
-                            <!--<h6>22-24 мая</h6>-->
-                        <!--</div>-->
-
-                    <!--</div>-->
-
-
-
-                    <!--<div class="pop">-->
-
-                        <!--<div class="type pro" data-type="3"></div>-->
-
-                        <!--<div class="img">-->
-                            <!--<div class="pic" style="background-image: url(img/htmll.png)"></div>-->
-                        <!--</div>-->
-
-
-                        <!--<div class="desc">-->
-                            <!--<h3>HTML5 + CSS3</h3>-->
-                            <!--<p>Основы веб-разработки</p>-->
-                        <!--</div>-->
-
-                        <!--<div class="info">-->
-                            <!--<h5>5000р</h5>-->
-                            <!--<h6>22-24 мая</h6>-->
-                        <!--</div>-->
-
-                    <!--</div>-->
-
-
-                    <!--<div class="pop">-->
-
-                        <!--<div class="type pro" data-type="3"></div>-->
-
-                        <!--<div class="img">-->
-                            <!--<div class="pic" style="background-image: url(img/htmll.png)"></div>-->
-                        <!--</div>-->
-
-
-                        <!--<div class="desc">-->
-                            <!--<h3>HTML5 + CSS3</h3>-->
-                            <!--<p>Основы веб-разработки</p>-->
-                        <!--</div>-->
-
-                        <!--<div class="info">-->
-                            <!--<h5>5000р</h5>-->
-                            <!--<h6>22-24 мая</h6>-->
-                        <!--</div>-->
-
-                    <!--</div>-->
-
-
-                    <!--<div class="pop">-->
-
-                        <!--<div class="type pro" data-type="3"></div>-->
-
-                        <!--<div class="img">-->
-                            <!--<div class="pic" style="background-image: url(img/htmll.png)"></div>-->
-                        <!--</div>-->
-
-
-                        <!--<div class="desc">-->
-                            <!--<h3>HTML5 + CSS3</h3>-->
-                            <!--<p>Основы веб-разработки</p>-->
-                        <!--</div>-->
-
-                        <!--<div class="info">-->
-                            <!--<h5>5000р</h5>-->
-                            <!--<h6>22-24 мая</h6>-->
-                        <!--</div>-->
-
-                    <!--</div>-->
 
                     <a href="/courses">ПОСМОТРЕТЬ ВСЕ КУРСЫ</a>
                 </div>
@@ -267,9 +181,9 @@
         </div>
     </section>
 
-    <section id="subscribe" data-stellar-background-ratio="0.3" style="background-position: 0px -704.1999999999999px;">
+    <section id="subscribe" data-stellar-background-ratio="0.3">
         <h1>Будьте в курсе!</h1>
-        <h3>Получайте информацию о наших курсах</h3>
+        <h3>Получайте информацию о новых курсах</h3>
         <input type="email">
         <input type="submit" value="Подписаться!">
     </section>
