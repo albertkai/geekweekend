@@ -1,4 +1,4 @@
-if Courses.find({}).count() < 11
+if Courses.find({}).count() is 0
   Courses.insert {
     alias: 'html5'
     sphere: 'webdev'
@@ -9,10 +9,6 @@ if Courses.find({}).count() < 11
     desc: 'Данный курс - лучшее, что может предложить индустрия на данный момент! Вы пройдете как и базовые, так и другие темы'
     pic: 'htmll.png'
     price: 3000
-    events: [
-      ['msk', '22.01.12'],
-      ['spb', '24.06.14']
-    ]
     schedule: {
       saturday: [
           ['12:00', 'Встречаемся, базарим по душам']
@@ -49,3 +45,15 @@ if Cities.find({}).count() < 3
   Cities.insert {alias: 'msk', name: 'Москва', phone: '+7 (495) 545-50-50'}
   Cities.insert {alias: 'spb', name: 'Санк-Петербург', phone: '+7 (812) 545-50-50'}
   Cities.insert {alias: 'kiev', name: 'Киев', phone: '+33 (495) 545-50-50'}
+
+if Events.find({}).count() < 15
+  date = new Date()
+  date.setFullYear(2014, 2, 28)
+  date.setDate(_.random(1, 31))
+  Events.insert {
+    course: 'html5'
+    city: 'msk'
+    date: date
+    trainer: 1
+    pop: true
+  }

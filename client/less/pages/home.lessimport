@@ -619,11 +619,11 @@
                 width: 190px;
                 height: 190px;
                 position: absolute;
-                border: 7px solid @gray-lighter;
+                border: 5px solid @gray-lighter;
                 .box-sizing(content-box);
                 z-index: 3;
-                left: -7px;
-                top: -7px;
+                left: -5px;
+                top: -5px;
                 .rounded(140px);
               }
               .pic{

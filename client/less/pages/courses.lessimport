@@ -26,7 +26,9 @@
 
 #courses-main {
   background: url(/img/rockywall.png);
-  min-height: 700px
+  min-height: 700px;
+  padding-bottom: 80px;
+  margin-bottom: -60px;
 }
 
 #courses-main > .container {

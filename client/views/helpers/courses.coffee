@@ -1,18 +1,34 @@
 Template.courses.rendered = ->
+
   Deps.autorun ->
     $('.isotope').isotope {
       itemSelector: '.item'
     }
 
+  $('#chooseCity').find('[data-city="' + Session.get('city') + '"]').addClass('_active')
+
+
 
 Template.courses.helpers {
-  courses: ->
+
+  events: ->
     options = {}
     sorting = {}
     if Session.get('coursesFilter.chooseSphere') isnt '*'
       options['sphere'] = Session.get('coursesFilter.chooseSphere')
     sorting[Session.get('coursesFilter.chooseSort')] = 1
-    Courses.find(options, {sort: sorting})
+    Events.find({city: Session.get('city')}, {sort: sorting})
+
+}
+
+Template.courseItem.helpers {
+
+  getDate: (date)->
+    "#{moment(date).lang('ru').format('D')} - #{moment(date).lang('ru').add('days', 1).format('D MMMM')}"
+
+  course: ->
+    Courses.findOne({alias: @course})
+
   getType: (type)->
     if type is 1
       'kick-start'
@@ -20,7 +36,6 @@ Template.courses.helpers {
       'level-up'
     else if type is 3
       'pro'
-
 }
 
 Template.courses.events {

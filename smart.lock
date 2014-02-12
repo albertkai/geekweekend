@@ -19,8 +19,8 @@
       },
       "auto-nprogress": {
         "git": "https://github.com/settinghead/meteor-auto-nprogress.git",
-        "tag": "v0.1.5",
-        "commit": "58ba7efdd2919a165f1b8a27141198bb6ba9d4ac"
+        "tag": "v0.2.7",
+        "commit": "3fa87d5244e140cc5b49696585cd23b110c36467"
       },
       "nprogress": {
         "git": "https://github.com/zhouzhuojie/meteor-nprogress.git",

@@ -1,199 +1,198 @@
 <template name="courses">
-<section id="main" class="loaded">
 
-<div id="courses-heading">
-    <h2>Выберите курс:</h2>
-</div>
+    <section id="main" class="loaded">
 
-
-<div id="courses-main">
-
-<div class="container">
-
-<div class="row row-offcanvas row-offcanvas-left">
-
-<aside class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-
-    <h3>Город:</h3>
-
-
-    <div class="multi-select">
-        <ul>
-            <li class="_active" data-city="msk">Москва</li>
-            <li data-city="spb">Санкт-Петербург</li>
-            <li data-city="kiev">Киев</li>
-        </ul>
-    </div>
-
-
-    <h3>Сфера:</h3>
-
-
-    <div id="chooseSphere" class="custom-select">
-        <p>Все сферы</p>
-        <i></i>
-        <ul>
-            <li data-value="*">Все сферы</li>
-            <li data-value="webdev">Веб-разработка</li>
-            <li data-value="design">Дизайн</li>
-        </ul>
-    </div>
-
-
-    <h3>Выберите тип:</h3>
-
-
-    <ul id="chooseType">
-        <li>
-            <div class="custom-checkbox kick-start _active" data-value="kick-start">
-                <div></div>
-            </div>
-            Kick-start
-        </li>
-        <li>
-            <div class="custom-checkbox level-up _active" data-value="level-up">
-                <div></div>
-            </div>
-            Level-up
-        </li>
-        <li>
-            <div class="custom-checkbox pro _active" data-value="pro">
-                <div></div>
-            </div>
-            Pro
-        </li>
-    </ul>
-
-    <h3>Сортировать по:</h3>
-
-    <div id="chooseSort" class="custom-select">
-        <p>По дате</p>
-        <i></i>
-        <ul>
-            <li data-value="date">По дате</li>
-            <li data-value="price">По цене</li>
-            <li data-value="type">По типу</li>
-        </ul>
-    </div>
-
-</aside><!--/span-->
-
-<div class="courses-cont col-xs-12 col-sm-9">
-    <button id="sidenav-toggle" class="visible-xs">Toggle</button>
-    <div class="row isotope">
-
-{{#each courses}}
-
-
-        <div class="item {{getType type}} Веб-разработка isotope-item" data-alias="{{alias}}">
-            <div class="thumb flip">
-
-                <!--</div>-->
-
-                <div class="wrapper">
-                    <div class="recto">
-
-                        <div>
-
-                            <!--<div class="type {{getType type}}" data-type="{{type}}">-->
-                                <!--<p>{{getType type}}</p>-->
-                            <!--</div>-->
-
-                            <!--<div class="img">-->
-                                <!--<div class="course-pic" style="background-image: url(/img/{{pic}})"></div>-->
-
-                                <!--<p class="date"><span>23-24</span> мая</p>-->
-                            <!--</div>-->
-                            <!--<div class="info" data-price="{{price}}">-->
-                                <!--<h3>{{title}}</h3>-->
-                                <!--<h4>{{shortDesc}}</h4>-->
-                            <!--</div>-->
-
-                            <!--<p class="price">{{price}}<i class="fa fa-rouble"></i></p>-->
-
-                            <div class="type {{getType type}}" data-type="{{type}}"></div>
-
-                            <div class="image">
-                                <div id="border-radius-fix"></div>
-                                <div class="pic" style="background-image: url(img/{{pic}})"></div>
-                                <h5 data-price="{{price}}">{{price}}<i class="fa fa-rouble"></i></h5>
-                            </div>
-
-
-                            <div class="desc">
-                                <h3>{{title}}</h3>
-                                <p>{{shortDesc}}</p>
-                            </div>
-
-                            <div class="info">
-                                <h6>22-24 мая</h6>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="verso">
-
-                        <div class="fading top"></div>
-
-                        <div class="fading bottom"></div>
-
-                        <div class="main-list">
-
-                            <h3>Вы изучите:</h3>
-
-                            <ul>
-
-                                {{#each skills}}
-
-                                <li>{{this}}</li>
-
-                                {{/each}}
-
-                            </ul>
-
-                            <h3>Пройденные темы:</h3>
-
-                            <ul>
-
-                                {{#each topics}}
-
-                                <li>{{this}}</li>
-
-                                {{/each}}
-
-                            </ul>
-
-                            <h3>Требования</h3>
-
-                            <ul>
-
-                                {{#each require}}
-
-                                <li>{{this}}</li>
-
-                                {{/each}}
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div id="courses-heading">
+            <h2>Выберите курс:</h2>
         </div>
 
-{{/each}}
+
+        <div id="courses-main">
+
+            <div class="container">
+
+                <div class="row row-offcanvas row-offcanvas-left">
+
+                    <aside class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+
+                        <h3>Город:</h3>
 
 
+                        {{#constant}}
+                        <div id="chooseCity" class="multi-select">
+                            <ul>
+                                <li data-city="msk">Москва</li>
+                                <li data-city="spb">Санкт-Петербург</li>
+                                <li data-city="kiev">Киев</li>
+                            </ul>
+                        </div>
+                        {{/constant}}
 
-</div><!--/row-->
-</div><!--/span-->
+
+                        <h3>Сфера:</h3>
 
 
-</div><!--/row-->
-</div>
+                        {{#constant}}
+                        <div id="chooseSphere" class="custom-select">
+                            <p>Все сферы</p>
+                            <i></i>
+                            <ul>
+                                <li data-value="*">Все сферы</li>
+                                <li data-value="webdev">Веб-разработка</li>
+                                <li data-value="design">Дизайн</li>
+                            </ul>
+                        </div>
+                        {{/constant}}
 
-</div>
 
-</section>
+                        <h3>Выберите тип:</h3>
+
+
+                        {{#constant}}
+                        <ul id="chooseType">
+                            <li>
+                                <div class="custom-checkbox kick-start _active" data-value="kick-start">
+                                    <div></div>
+                                </div>
+                                Kick-start
+                            </li>
+                            <li>
+                                <div class="custom-checkbox level-up _active" data-value="level-up">
+                                    <div></div>
+                                </div>
+                                Level-up
+                            </li>
+                            <li>
+                                <div class="custom-checkbox pro _active" data-value="pro">
+                                    <div></div>
+                                </div>
+                                Pro
+                            </li>
+                        </ul>
+                        {{/constant}}
+
+                        <h3>Сортировать по:</h3>
+
+                        {{#constant}}
+                        <div id="chooseSort" class="custom-select">
+                            <p>По дате</p>
+                            <i></i>
+                            <ul>
+                                <li data-value="date">По дате</li>
+                                <li data-value="price">По цене</li>
+                                <li data-value="type">По типу</li>
+                            </ul>
+                        </div>
+                        {{/constant}}
+
+                    </aside>
+                    <!--/span-->
+
+                    <div class="courses-cont col-xs-12 col-sm-9">
+                        <button id="sidenav-toggle" class="visible-xs">Toggle</button>
+                        <div class="row isotope">
+
+                            {{#each events}}
+
+                                {{>courseItem}}
+
+                            {{/each}}
+
+                            <div id="add-more" class="item"><p>+</p></div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</template>
+
+
+<template name="courseItem">
+    {{#with course}}
+    <div class="item {{getType type}} Веб-разработка isotope-item" data-alias="{{alias}}">
+        <div class="thumb flip">
+
+            <div class="wrapper">
+                <div class="recto">
+
+                    <div>
+
+                        <div class="type {{getType type}}" data-type="{{type}}"></div>
+
+                        <div class="image">
+                            <div id="border-radius-fix"></div>
+                            <div class="pic" style="background-image: url(img/{{pic}})"></div>
+                            <h5 data-price="{{price}}">{{price}}<i class="fa fa-rouble"></i></h5>
+                        </div>
+
+
+                        <div class="desc">
+                            <h3>{{title}}</h3>
+                            <p>{{shortDesc}}</p>
+                        </div>
+
+                        <div class="info">
+                            <h6>{{getDate ../date}}</h6>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="verso">
+
+                    <div class="fading top"></div>
+
+                    <div class="fading bottom"></div>
+
+                    <div class="main-list">
+
+                        <h3>Вы изучите:</h3>
+
+                        <ul>
+
+                            {{#each skills}}
+
+                            <li>{{this}}</li>
+
+                            {{/each}}
+
+                        </ul>
+
+                        <h3>Пройденные темы:</h3>
+
+                        <ul>
+
+                            {{#each topics}}
+
+                            <li>{{this}}</li>
+
+                            {{/each}}
+
+                        </ul>
+
+                        <h3>Требования</h3>
+
+                        <ul>
+
+                            {{#each require}}
+
+                            <li>{{this}}</li>
+
+                            {{/each}}
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {{/with}}
 </template>
