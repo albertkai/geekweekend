@@ -4,8 +4,8 @@ Template.home.rendered = ->
     console.log 'imagesLoaded'
 
 Template.home.helpers {
-  courses: ->
-    Courses.find({pop: true}, {limit: 6})
+  events: ->
+    Events.find({pop: true}, {limit: 6})
 }
 
 
@@ -20,6 +20,24 @@ Template.home.events {
   'click #top-courses>div': (e)->
     target = $(e.target).closest('.item').data('alias')
     Router.go('course', {alias: target})
+}
+
+
+Template.popCourseItem.helpers {
+
+  getDate: (date)->
+    "#{moment(date).lang('ru').format('D')} - #{moment(date).lang('ru').add('days', 1).format('D MMMM')}"
+
+  course: ->
+    Courses.findOne({alias: @course})
+
+  getType: (type)->
+    if type is 1
+      'kick-start'
+    else if type is 2
+      'level-up'
+    else if type is 3
+      'pro'
 }
 
 

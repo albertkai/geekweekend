@@ -51,9 +51,12 @@ if Events.find({}).count() < 15
   date.setFullYear(2014, 2, 28)
   date.setDate(_.random(1, 31))
   Events.insert {
+    id: Events.find({}).count() + 1
     course: 'html5'
     city: 'msk'
     date: date
     trainer: 1
     pop: true
   }
+
+

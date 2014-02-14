@@ -13,3 +13,7 @@ less
 coffeescript
 auto-nprogress
 underscore
+accounts-ui
+accounts-password
+roles
+regulate.js

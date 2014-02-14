@@ -4,7 +4,7 @@
         <div class="close"><i class="fa fa-rouble"></i></div>
         <div class="header">
             ЗАПИСЬ НА КУРС <br>
-            <span>HTML5 + CSS3</span>
+            <span>{{course.title}}</span>
         </div>
         <div class="body">
             <form id="first-form" action="">
@@ -16,6 +16,7 @@
                     <div>
                         <input type="tel" class="required phone" data-rule-minlength="2" name="tel" id="tel" placeholder="ТЕЛЕФОН*">
                         <input type="email" class="required email" data-rule-minlength="2" name="email" id="email" placeholder="E-MAIL*">
+                        <input id="event" type="hidden" value="{{event}}"/>
                     </div>
                     <textarea name="" id="" cols="30" rows="3" placeholder="ЕСТЬ ЧТО ДОБАВИТЬ?"></textarea>
                     <button class="further">ДАЛЕЕ <span class="glyphicon glyphicon-arrow-right icon-white"></span>
@@ -32,8 +33,9 @@
                                 <i></i>
                                 <ul>
                                     <li data-value="0">Есть свой ноутбук</li>
-                                    <li data-value="1000">Нужно предоставить</li>
+                                    <li data-value="1">Нужно предоставить</li>
                                 </ul>
+                                <input class="value" type="hidden" value="0"/>
                             </div>
                         </div>
 
@@ -47,6 +49,7 @@
                                     <li data-value="mac">Mac OSX</li>
                                     <li data-value="linux">Linux</li>
                                 </ul>
+                                <input class="value" type="hidden" value="windows"/>
                             </div>
                         </div>
 
@@ -79,6 +82,8 @@
         </div>
     </div>
 
+    {{#with course}}
+
     <section id="course-pic" data-velocity=".8" style="background-image: url(/img/{{pic}});">
         <div class="container">
             <h1 data-velocity=".8">{{title}}</h1>
@@ -87,7 +92,7 @@
         </div>
     </section>
 
-    <section id="course-content" data-price="{{price}}">
+    <section id="course-content" data-price="{{price}}" data-event="{{../event}}">
 
         <div class="rotated"></div>
 
@@ -165,7 +170,7 @@
 
                 <aside>
 
-                    <h3>Город: </h3>
+                    <h3>Адрес: </h3>
 
                     <p class="city">{{city.name}}</p>
 
@@ -219,6 +224,8 @@
         </div>
 
     </section>
+
+    {{/with}}
 
 
 

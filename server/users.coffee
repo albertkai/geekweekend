@@ -1,0 +1,1 @@
+Meteor.users.update({username: 'albert_kai'}, {$set: {roles: ['root', 'admin']}})

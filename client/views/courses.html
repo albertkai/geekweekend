@@ -116,8 +116,10 @@
 
 <template name="courseItem">
     {{#with course}}
-    <div class="item {{getType type}} Веб-разработка isotope-item" data-alias="{{alias}}">
+    <div class="item {{getType type}} Веб-разработка isotope-item" data-alias="{{alias}}" data-event="{{../id}}">
         <div class="thumb flip">
+
+            <input id="event-id" type="hidden" value="{{_id}}"/>
 
             <div class="wrapper">
                 <div class="recto">

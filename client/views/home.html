@@ -1,4 +1,5 @@
 <template name="home">
+
     <section id="slider">
         <div id="slider-arrows" class="container">
             <i class="icons arrow-left"></i>
@@ -101,55 +102,11 @@
                 <div id="top-courses">
                     <h3>ТОП-КУРСЫ:</h3>
 
-                    {{#each courses}}
+                    {{#each events}}
 
-                    <div class="item" data-alias="{{alias}}">
-
-                        <div class="type pro" data-type="{{type}}"></div>
-
-                        <div class="image">
-                            <div id="border-radius-fix"></div>
-                            <div class="border-overlay"></div>
-                            <div class="pic" style="background-image: url(img/{{pic}})"></div>
-                            <h5 data-price="{{price}}">{{price}}<i class="fa fa-rouble"></i></h5>
-                        </div>
-
-
-                        <div class="desc">
-                            <h3>{{title}}</h3>
-                            <p>{{shortDesc}}</p>
-                        </div>
-
-                        <div class="info">
-                            <h6>22-24 мая</h6>
-                        </div>
-
-                    </div>
+                        {{>popCourseItem}}
 
                     {{/each}}
-
-
-                    <!--<div class="pop">-->
-
-                        <!--<div class="type pro" data-type="3"></div>-->
-
-                        <!--<div class="img">-->
-                            <!--<div class="pic" style="background-image: url(img/htmll.png)"></div>-->
-                        <!--</div>-->
-
-
-                        <!--<div class="desc">-->
-                            <!--<h3>HTML5 + CSS3</h3>-->
-                            <!--<p>Основы веб-разработки</p>-->
-                        <!--</div>-->
-
-                        <!--<div class="info">-->
-                            <!--<h5>5000р</h5>-->
-                            <!--<h6>22-24 мая</h6>-->
-                        <!--</div>-->
-
-                    <!--</div>-->
-
 
 
                     <a href="/courses">ПОСМОТРЕТЬ ВСЕ КУРСЫ</a>
@@ -188,5 +145,37 @@
         <input type="email">
         <input type="submit" value="Подписаться!">
     </section>
+
+</template>
+
+
+<template name="popCourseItem">
+
+    {{#with course}}
+
+    <div class="item" data-alias="{{alias}}">
+
+        <div class="type pro" data-type="{{type}}"></div>
+
+        <div class="image">
+            <div id="border-radius-fix"></div>
+            <div class="border-overlay"></div>
+            <div class="pic" style="background-image: url(img/{{pic}})"></div>
+            <h5 data-price="{{price}}">{{price}}<i class="fa fa-rouble"></i></h5>
+        </div>
+
+
+        <div class="desc">
+            <h3>{{title}}</h3>
+            <p>{{shortDesc}}</p>
+        </div>
+
+        <div class="info">
+            <h6>{{getDate ../date}}</h6>
+        </div>
+
+    </div>
+
+    {{/with}}
 
 </template>

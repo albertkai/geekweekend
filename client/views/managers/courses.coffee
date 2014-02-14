@@ -48,7 +48,9 @@ Template.courses.events {
 
   'click .courses-cont .item': (e)->
     target = $(e.target).closest('.item').data('alias')
-    Router.go('course', {alias: target})
+    event = $(e.target).closest('.item').data('event')
+    Session.set 'currentEvent', $('#event-id').val()
+    Router.go('course', {alias: target, event: event})
 
   'click .multi-select>ul>li': (e)->
     $(e.target).closest('ul').find('li').removeClass('_active')
