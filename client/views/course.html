@@ -1,7 +1,7 @@
 <template name="course">
 
     <div id="get-course-modal" class="r-modal">
-        <div class="close"><i class="fa fa-rouble"></i></div>
+        <div class="close"><span class="glyphicon glyphicon-remove-sign"></span></div>
         <div class="header">
             ЗАПИСЬ НА КУРС <br>
             <span>{{course.title}}</span>
@@ -17,8 +17,11 @@
                         <input type="tel" class="required phone" data-rule-minlength="2" name="tel" id="tel" placeholder="ТЕЛЕФОН*">
                         <input type="email" class="required email" data-rule-minlength="2" name="email" id="email" placeholder="E-MAIL*">
                         <input id="event" type="hidden" value="{{event}}"/>
+                        <input id="courseTitle" type="hidden" value="{{course.title}}"/>
+                        <input id="courseDate" type="hidden" value="{{date}}"/>
+                        <input id="city" type="hidden" value="{{city.name}}"/>
                     </div>
-                    <textarea name="" id="" cols="30" rows="3" placeholder="ЕСТЬ ЧТО ДОБАВИТЬ?"></textarea>
+                    <textarea name="" id="additional" cols="30" rows="3" placeholder="ЕСТЬ ЧТО ДОБАВИТЬ?"></textarea>
                     <button class="further">ДАЛЕЕ <span class="glyphicon glyphicon-arrow-right icon-white"></span>
                     </button>
                 </div>
@@ -112,27 +115,14 @@
                         <div>
                             <h4>Суббота</h4>
 
-                            {{#each schedule.saturday}}
-                                <div>
-                                {{#each this}}
-                                    <p>{{this}}</p>
-                                {{/each}}
-                                </div>
-                            {{/each}}
+                            {{{schedule.saturday}}}
 
                         </div>
 
                         <div>
                             <h4>Воскресенье</h4>
 
-
-                            {{#each schedule.sunday}}
-                            <div>
-                                {{#each this}}
-                                <p>{{this}}</p>
-                                {{/each}}
-                            </div>
-                            {{/each}}
+                            {{{schedule.sunday}}}
 
                         </div>
 
@@ -177,17 +167,14 @@
                     <h3>Ближайшие даты:</h3>
 
                     <p class="dates">
-                        <span>24-25</span><br>
-                        мая
+                        {{date}}
                     </p>
 
                     <h3>Вы изучите:</h3>
 
                     <ul>
 
-                        {{#each skills}}
-                            <li>{{this}}</li>
-                        {{/each}}
+                        {{{skills}}}
 
                     </ul>
 
@@ -195,9 +182,7 @@
 
                     <ul>
 
-                        {{#each topics}}
-                        <li>{{this}}</li>
-                        {{/each}}
+                        {{{topics}}}
 
                     </ul>
 
@@ -205,9 +190,7 @@
 
                     <ul>
 
-                        {{#each require}}
-                        <li>{{this}}</li>
-                        {{/each}}
+                        {{{require}}}
 
                     </ul>
 

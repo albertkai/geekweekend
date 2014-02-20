@@ -5,6 +5,11 @@ Session.set 'coursesFilter.chooseSort', 'date'
 
 
 Meteor.startup ->
-
+  $.ionSound({
+    sounds: [
+      "glass"
+    ],
+    path: "/sounds/"
+  })
 
 

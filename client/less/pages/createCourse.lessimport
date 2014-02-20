@@ -1,0 +1,49 @@
+#course-pic {
+  .drop-pic {
+    &._hover{
+      color: @green;
+    }
+    cursor: pointer;
+    top: 200px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-align: center;
+    color: @gray-light;
+    font-size: 50px;
+    font-weight: 100;
+    span {
+      display: block;
+      font-weight: 500;
+      font-size: 25px;
+    }
+  }
+}
+
+.add{
+  float: right;
+  padding: 0;
+  width: 46px;
+  height: 46px;
+  line-height: 40px;
+  .rounded(33px);
+  margin-right: 13px;
+}
+
+.remove{
+  float: right;
+  padding: 0;
+  width: 46px;
+  height: 46px;
+  line-height: 40px;
+  .rounded(33px);
+  margin-right: 13px;
+  border-color: @red;
+  color: @red;
+}
+
+#course-content aside input[type="text"]{
+  width: 100%;
+  margin: 10px 0;
+}

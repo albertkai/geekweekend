@@ -4,14 +4,20 @@
         <div id="toggle-admin-panel">+</div>
         <div class="header">
 
-            <a href="{{pathFor 'dashboard'}}">Открыть дэшборд</a>
-        </div>
+            <div class="user-pic"></div>
 
+            <h3>{{currentUser.profile.name}}</h3>
+            <h2>{{currentUser.profile.surname}}</h2>
+
+            <a id="open-dashboard" href="{{pathFor 'dashboard'}}">Открыть дэшборд</a>
+            <hr/>
+        </div>
         <div class="body">
-             The rest
+            <button>События</button>
+            <button>Курсы</button>
+            <button>Тренеры</button>
         </div>
 
-        <p class="invoke">Hello</p>
 
     </div>
 </template>

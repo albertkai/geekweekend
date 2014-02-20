@@ -1,4 +1,5 @@
 #course-pic {
+  position: relative;
   height: 540px;
   background: #eee;
   margin-top: -100px;
@@ -12,7 +13,7 @@
 }
 
 #course-pic > .container {
-  position: relative
+  position: relative;
 }
 
 #course-pic > .container h1, #course-pic > .container h2 {
@@ -28,27 +29,22 @@
 }
 
 #course-pic > .container h1 {
-  top: 126px;
+  top: 146px;
   font-size: 60px;
   font-weight: 100;
   text-transform: uppercase;
-  .rotate(-1deg);
 }
 
 #course-pic > .container h2 {
-  top: 230px;
-  left: 60px;
+  top: 245px;
   font-weight: 100;
   font-size: 40px;
-  .rotate(2deg);
 }
 
 #course-pic > .container h3 {
   position: absolute;
-  left: 40px;
   display: inline-block;
-  top: 303px;
-  .rotate(-1deg);
+  top: 323px;
   opacity: .9;
   font-size: 70px;
   font-weight: 500;

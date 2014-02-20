@@ -7,7 +7,7 @@ Template.course.rendered = ->
 Template.course.helpers {
   trainer: ->
     Trainers.findOne({id: @trainer})
-  getType: ->
+  getType: (type)->
     if @type is 1
       'kick-start'
     else if @type is 2
@@ -16,6 +16,11 @@ Template.course.helpers {
       'pro'
   city: ->
     Cities.findOne({alias: Session.get('city')})
+
+  date: ->
+    date = Events.findOne({id: parseInt(Session.get 'currentEvent', 10)}).date
+    "#{moment(date).format('D')} - #{moment(date).lang('ru').add('days', 1).format('D MMMM')}"
+
 }
 
 Template.course.events {
@@ -63,9 +68,14 @@ orderFormCtrl = {
     order.push {name: 'tel', value: $('#first-form').find('#tel').val()}
     order.push {name: 'email', value: $('#first-form').find('#email').val()}
     order.push {name: 'event', value: $('#event').val()}
+    order.push {name: 'title', value: $('#courseTitle').val()}
+    order.push {name: 'date', value: $('#courseDate').val()}
+    order.push {name: 'additional', value: $('#additional').val()}
     order.push {name: 'needLaptop', value: $('#got-notebook').find('.value').val()}
     order.push {name: 'system', value: $('#system').find('.value').val()}
     order.push {name: 'payment', value: $('#second-form').find('[name="payment"]:checked').val()}
+    order.push {name: 'city', value: $('#city').val()}
+    order.push {name: 'status', value: 'new'}
     Meteor.call 'createOrder', order, (error, result)->
       if error
         $.jGrowl('Что-то пошло не так=( Свяжитесь пожалуйста с нами по телефону!')

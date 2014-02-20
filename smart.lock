@@ -6,7 +6,11 @@
       "iron-router": {},
       "auto-nprogress": {},
       "roles": {},
-      "regulate.js": {}
+      "regulate.js": {},
+      "mailgun": {},
+      "aws-sdk": {},
+      "Dropzonejs": {},
+      "imagemagick": {}
     },
     "packages": {
       "bootstrap3-less": {
@@ -34,10 +38,35 @@
         "tag": "v0.1.3.5",
         "commit": "b0e85a2782003ed5cba1f278300b590e8a2dc1bd"
       },
+      "mailgun": {
+        "git": "https://github.com/cunneen/meteor-mailgun.git",
+        "tag": "v0.9.0",
+        "commit": "302373c32b58b67dfe67de4dcdad065a33925fc2"
+      },
+      "aws-sdk": {
+        "git": "https://github.com/peerlibrary/meteor-aws-sdk.git",
+        "tag": "v1.5.1.1",
+        "commit": "63efa4ebbe9986bd875f69d5fdf3248c5c44159e"
+      },
+      "Dropzonejs": {
+        "git": "https://github.com/devonbarrett/meteor-dropzone.git",
+        "tag": "v1.0.1",
+        "commit": "aa0e15055a519e72a97d02cffad4b052e840433d"
+      },
+      "imagemagick": {
+        "git": "https://github.com/sylvaingi/meteor-imagemagick.git",
+        "tag": "v0.1.2",
+        "commit": "d67bb926356d35cdff1a6d6c3c69750f3f54c059"
+      },
       "nprogress": {
         "git": "https://github.com/zhouzhuojie/meteor-nprogress.git",
         "tag": "v0.0.3",
         "commit": "ffd1c5dd400af64121197f4e637a215c4b6b1fc7"
+      },
+      "blocking": {
+        "git": "https://github.com/peerlibrary/meteor-blocking.git",
+        "tag": "v0.4.0",
+        "commit": "e25a0be72e771b317b26d2bb5758c983bdcef23c"
       }
     }
   }

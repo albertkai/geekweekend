@@ -16,12 +16,21 @@ Router.map ()->
   @route 'course', {
     path: 'course/:alias/:event'
     before: ->
-      console.log Courses.find({alias: @params.alias})
+      Session.set 'currentEvent', @params.event
     data: ->
       {
         course: Courses.findOne({alias: @params.alias})
         event: @params.event
       }
+  }
+
+  @route 'createCourse', {
+    before: ->
+      loggedInUser = Meteor.user()
+      if !loggedInUser or !Roles.userIsInRole loggedInUser, ['admin']
+        $.jGrowl('У вас нет прав для доступа, пожалуйста залогинтесь!')
+        @stop()
+        Router.go('home')
   }
 
   @route 'contacts', {

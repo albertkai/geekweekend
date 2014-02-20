@@ -20,6 +20,23 @@ Template.home.events {
   'click #top-courses>div': (e)->
     target = $(e.target).closest('.item').data('alias')
     Router.go('course', {alias: target})
+  'click #subscribe .go': (e)->
+    e.preventDefault()
+    subscription = []
+    subscription.push {name: 'email', value: $('#subscribe').find('#s-email').val()}
+    Meteor.call 'subscribe', subscription, (error, result)->
+      if error
+        $.jGrowl('Что-то пошло не так=( Свяжитесь пожалуйста с нами по телефону!')
+      else
+        if result
+          $.jGrowl("Ваша заявка принята, #{$('#first-form').find('#first-name').val()}! Мы с вами свяжемся, действительно очень быстро=)")
+        else
+          $.jGrowl('Что-то пошло не так=( Свяжитесь пожалуйста с нами по телефону!')
+      $('.r-modal').removeClass('flipInY').addClass('flipOutY')
+      $('.modal-overlay').removeClass('_opened')
+      setTimeout ->
+        $('.r-modal').css('visibility', 'hidden')
+      , 500
 }
 
 

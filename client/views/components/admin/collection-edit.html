@@ -1,0 +1,45 @@
+<template name="collectionEdit">
+    <section class="collection-modal">
+        <div class="header">
+            Добавить событие
+        </div>
+        <div class="body">
+            <aside>
+                <ul>
+                    <li data-target="id">
+                        <p class="date">{{getDate date}}</p>
+                        <p class="course">{{curse}}</p>
+                        <p class="city">{{city}}</p>
+                    </li>
+                </ul>
+                <button class="add-item">+</button>
+            </aside>
+            <div class="main">
+                <div class="window">
+                    <form action="">
+                        <select name="" id="chooseCourse">
+                            <option value="">HTML5 + CSS3</option>
+                            <option value="">Ruby on Rails</option>
+                        </select>
+                        <select name="" id="chooseCity">
+                            <option value="">Москва</option>
+                            <option value="">Ruby on Rails</option>
+                        </select>
+                        <select name="" id="chooseAddress">
+                            <option value="">ул. Кирочная 77, 13</option>
+                            <option value="">пр. Энтузиастов 24</option>
+                        </select>
+                        <select name="" id="chooseTrainer">
+                            <option value="">ул. Кирочная 77, 13</option>
+                            <option value="">пр. Энтузиастов 24</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="controls">
+                    <button>!</button>
+                    <button>х</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>

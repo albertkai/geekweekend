@@ -4,6 +4,10 @@
     "iron-router": {},
     "auto-nprogress": {},
     "roles": {},
-    "regulate.js": {}
+    "regulate.js": {},
+    "mailgun": {},
+    "aws-sdk": {},
+    "Dropzonejs": {},
+    "imagemagick": {}
   }
 }

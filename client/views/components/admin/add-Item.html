@@ -1,80 +1,57 @@
-<template name="add-item">
+<template name="addItem">
     <div class="admin-modal">
         <div class="container">
+
+            <h1>Добавить новый курс</h1>
+
             <form class="form-horizontal" role="form">
-                <div class="form-group">
-                    <label for="alias" class="col-sm-2 control-label">Alias:</label>
 
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="alias" placeholder="Password">
+                <div class="row">
+                    <div class="col-md-2">
+                        <p>Alias:</p>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="typeChoose" class="col-sm-2 control-label">Тип:</label>
-
-                    <div class="col-sm-10">
-                        <select name="" id="typeChoose">
-                            <option value="webdev">Веб-разработка</option>
-                            <option value="design">Дизайн</option>
-                            <option value="other">Другое</option>
-                        </select>
+                    <div class="col-md-4">
+                        <input type="text"/>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="pop" class="col-sm-2 control-label">Популярное:</label>
-
-                    <div class="col-sm-10">
-                        <input type="checkbox" class="form-control" id="pop" placeholder="Password">
+                    <div class="col-md-2">
+                        Название:
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text"/>
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="pop" class="col-sm-2 control-label">Название:</label>
-
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="title" placeholder="Название">
+                <div class="row">
+                    <div class="col-md-2">
+                        <p>Кратко:</p>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text"/>
+                    </div>
+                    <div class="col-md-2">
+                        Описание:
+                    </div>
+                    <div class="col-md-4">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="shortDesc" class="col-sm-2 control-label">Кратко:</label>
-
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="shortDesc" placeholder="кратко">
+                <div class="row">
+                    <div class="col-md-2">
+                        <p>Кратко:</p>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text"/>
+                    </div>
+                    <div class="col-md-2">
+                        Описание:
+                    </div>
+                    <div class="col-md-4">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="desc" class="col-sm-2 control-label">Популярное:</label>
 
-                    <div class="col-sm-10">
-                        <textarea name="" id="desc" cols="30" rows="10"></textarea>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="desc" class="col-sm-2 control-label">Популярное:</label>
-
-                    <div class="col-sm-10">
-                        <input type="file" id="pic"/>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="desc" class="col-sm-2 control-label">Популярное:</label>
-
-                    <div class="col-sm-10">
-                        <input type="number" id="price"/>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="desc" class="col-sm-2 control-label">Популярное:</label>
-
-                    <div class="col-sm-10">
-                        <input type="number" id="price"/>
-                    </div>
-                </div>
 
             </form>
         </div>
